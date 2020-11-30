@@ -22,3 +22,5 @@
     command: preupg
   - name: OS Upgrade
     command: redhat-upgrade-tool --iso /opt/path-dvd.iso --cleanup-post
+  - name: Reboot the server
+    command: reboot
