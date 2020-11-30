@@ -18,7 +18,7 @@
     yum: name=preupgrade-assistant-ui state=installed   
   - name: Install redhat-upgrade-tool
     yum: name=redhat-upgrade-tool state=installed
-  - name: preupg
+  - name: Running the Preupgrade Assistant
     command: preupg
   - name: Enable SE Status
     command: semodule -r sandbox
