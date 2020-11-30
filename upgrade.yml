@@ -1,46 +1,22 @@
 ---
-- name: configure ip tables
+- name: Rhel upgrade 6.10 to 7.6
   hosts: all
   tasks:
-
-  - name: Install NTP
-    yum: name=ntp state=installed 
-    tags: ntp
-    
-  - name: allow ntp through firewall
-    shell: firewall-cmd --add-service=ntp --permanent
-
-  - name: firewall reload
-    shell: firewall-cmd --reload
-
-  - name: Make sure Chrony is started up
-    service: name=chronyd state=started enabled=yes
-    tags: chrony
- 
-  - name: set timezone
-    shell: timedatectl set-timezone Europe/Berlin
- 
-  - name: Copy over the NTP configuration
-    copy: src=/root/ntp.conf dest=/etc/ntp.conf remote_src=true
-    notify:
-    - restart ntpd
-    tags: ntp
- 
-  - name: Make sure NTP is stopped
-    service: name=ntpd state=stopped enabled=yes
-    tags: ntp
- 
-  - name: Sync time initialy
-    shell: ntpdate 0.in.pool.ntp.org
-    tags: ntp
-
-  - name: Make sure NTP is started up
-    service: name=ntpd state=restarted enabled=yes
-    tags: ntp
-
-  - name: Sync hwclock
-    shell: hwclock -w
-    tags: ntp
-
-  - name: Unlink localtime
-    command: sudo unlink /etc/localtime
+  - name: Check Rhel version
+    command: cat /etc/redhat-release
+  - name: Enable Repos
+    command: subscription-manager repos --enable rhel-6-server-extras-rpms 
+  - name: Enable Repos
+    command: subscription-manager repos --enable rhel-6-server-optional-rpms
+  - name: Install preupgrade-assistant package
+    yum: name=preupgrade-assistant state=installed 
+  - name: Install preupgrade-assistant-el6toel7 package
+    yum: name=preupgrade-assistant-el6toel7 state=installed 
+  - name: Install preupgrade-assistant-el6toel7-data
+    yum: name=preupgrade-assistant-el6toel7-data state=installed 
+  - name: Install preupgrade-assistant-ui
+    yum: name=preupgrade-assistant-ui state=installed   
+  - name: Install redhat-upgrade-tool
+    yum: name=redhat-upgrade-tool state=installed
+  - name: preupg
+    command: preupg
