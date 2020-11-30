@@ -20,7 +20,13 @@
     yum: name=redhat-upgrade-tool state=installed
   - name: preupg
     command: preupg
+  - name: Enable SE Status
+    command: semodule -r sandbox
   - name: OS Upgrade
     command: redhat-upgrade-tool --iso /opt/path-dvd.iso --cleanup-post
-  - name: Reboot the server
+    notify:
+    - RestartServer
+  - handlers:
+    - name: RestartServer
+    
     command: reboot
