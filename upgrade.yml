@@ -24,9 +24,7 @@
     command: semodule -r sandbox
   - name: OS Upgrade
     command: redhat-upgrade-tool --iso /opt/path-dvd.iso --cleanup-post
-    notify:
-    - RestartServer
-  - handlers:
-    - name: RestartServer
-    
+    notify: RestartServer
+  handlers:
+  - name: RestartServer
     command: reboot
