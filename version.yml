@@ -6,4 +6,4 @@
   - name: Check Rhel version
     command: cat /etc/redhat-release
   - name: Distribution version
-    debug: msg="{{ ansible_distribution_version}}"
+    debug: msg="Rhel version is {{ ansible_distribution_version}}"
