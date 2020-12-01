@@ -9,4 +9,4 @@
     debug: msg="Rhel version is {{ ansible_distribution_version}}"
   - name: Rhel version check
     debug: msg="Whether to proceed with RHEL Upgrade"
-    failed_when: {{ ansible_distribution_version }} == 6.10
+    failed_when: "{{ ansible_distribution_version }} == 6.10"
