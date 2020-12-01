@@ -1,0 +1,9 @@
+---
+- name: Rhel upgrade 6.10 to 7.6
+  hosts: all
+  gather_facts: yes
+  tasks:
+  - name: Check Rhel version
+    command: cat /etc/redhat-release
+   - name: Distribution version
+     debug: msg="{{ ansible_distribution_version}}"
