@@ -7,7 +7,7 @@
     debug: msg="RHEL version is {{ ansible_distribution_version}}"
   - name: Rhel version check
     debug: msg="Proceed with RHEL Upgrade validating RHEL version check"
-    failed_when: "{{ ansible_distribution_version }} == 7.4 || {{ ansible_distribution_version }} == 7.5 || {{ ansible_distribution_version }} == 7.6 || {{ ansible_distribution_version }} == 7.7"
+    failed_when: "{ {{ ansible_distribution_version }} == 7.4 } || {{ ansible_distribution_version }} == 7.5 || {{ ansible_distribution_version }} == 7.6 || {{ ansible_distribution_version }} == 7.7 }"
   - name: Register to Red Hat subscription manager
     command: subscription-manager register --username rdodia --password secret
   - name: Attach subscription manager to the pool ID
