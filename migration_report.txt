@@ -1,0 +1,49 @@
+
+PLAY [Rhel upgrade 6.10 to 7.6] ***********************************************************************************************************************
+
+TASK [Gathering Facts] ********************************************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [RHEL Distribution Version] **********************************************************************************************************************
+ok: [192.168.0.103] => {
+    "msg": "RHEL version is 6.10"
+}
+
+TASK [Rhel version check] *****************************************************************************************************************************
+ok: [192.168.0.103] => {
+    "msg": "Proceed with RHEL Upgrade validating RHEL version check"
+}
+
+TASK [Register to Red Hat subscription manager] *******************************************************************************************************
+fatal: [192.168.0.103]: FAILED! => {"changed": true, "cmd": ["subscription-manager", "register", "--username", "rdodia", "--password", "****"], "delta": "0:00:00.166226", "end": "2020-12-01 12:28:41.165616", "msg": "non-zero return code", "rc": 64, "start": "2020-12-01 12:28:40.999390", "stderr": "This system is already registered. Use --force to override", "stderr_lines": ["This system is already registered. Use --force to override"], "stdout": "", "stdout_lines": []}
+...ignoring
+
+TASK [List Available subsriptions] ********************************************************************************************************************
+changed: [192.168.0.103]
+
+TASK [Attach subscription manager to the pool ID] *****************************************************************************************************
+fatal: [192.168.0.103]: FAILED! => {"changed": true, "cmd": ["subscription-manager", "attach", "--pool=8a85f99a6f0fa8df016f12535e7024ef"], "delta": "0:00:21.418543", "end": "2020-12-01 12:29:08.747553", "msg": "non-zero return code", "rc": 1, "start": "2020-12-01 12:28:47.329010", "stderr": "", "stderr_lines": [], "stdout": "This unit has already had the subscription matching pool ID \"8a85f99a6f0fa8df016f12535e7024ef\" attached.", "stdout_lines": ["This unit has already had the subscription matching pool ID \"8a85f99a6f0fa8df016f12535e7024ef\" attached."]}
+...ignoring
+
+TASK [Enable Repos for required RPMS needed for migration] ********************************************************************************************
+changed: [192.168.0.103]
+
+TASK [Enable Repos for required RPMS needed for migration] ********************************************************************************************
+changed: [192.168.0.103]
+
+TASK [Install preupgrade-assistant package] ***********************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [Install preupgrade-assistant-el6toel7 package] **************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [Install preupgrade-assistant-el6toel7-data] *****************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [Install preupgrade-assistant-ui] ****************************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [Install redhat-upgrade-tool] ********************************************************************************************************************
+ok: [192.168.0.103]
+
+TASK [Running the Preupgrade Assistant as a Root user for migration] **********************************************************************************
