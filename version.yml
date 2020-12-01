@@ -7,6 +7,6 @@
     command: cat /etc/redhat-release
   - name: Distribution version
     debug: msg="Rhel version is {{ ansible_distribution_version}}"
- - name: Rhel version check
-   debug: msg="Whether to proceed with RHEL Upgrade"
-   failed_when: {{ ansible_distribution_version }} == 6.10
+  - name: Rhel version check
+    debug: msg="Whether to proceed with RHEL Upgrade"
+    failed_when: {{ ansible_distribution_version }} == 6.10
