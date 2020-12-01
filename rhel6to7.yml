@@ -18,6 +18,7 @@
     command: subscription-manager list --available
   - name: Attach subscription manager to the pool ID
     command: subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
+    ignore_errors: yes
 #Use existing repos/process as per SBI
   - name: Enable Repos for required RPMS needed for migration
     command: subscription-manager repos --enable rhel-6-server-extras-rpms 
