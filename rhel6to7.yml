@@ -1,3 +1,4 @@
+#To Run this playbook without Ansible Tower via engine(in Check Mode): ansible-playbook -C rhel6to7.yml
 ---
 - name: Rhel upgrade 6.10 to 7.6
   hosts: all
@@ -8,6 +9,8 @@
   - name: Rhel version check
     debug: msg="Proceed with RHEL Upgrade validating RHEL version check"
     failed_when: ({{ ansible_distribution_version }} == 7.4 or {{ ansible_distribution_version }} == 7.5 or {{ ansible_distribution_version }} == 7.6)
+ #As per SBI upgrade patching process, playbook has to be updated
+ #This to be used for online migration with availability of internet/Satellite
   - name: Register to Red Hat subscription manager
     command: subscription-manager register --username rdodia --password secret
   - name: Attach subscription manager to the pool ID
