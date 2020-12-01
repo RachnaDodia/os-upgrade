@@ -1,0 +1,39 @@
+---
+- name: Rhel upgrade 6.10 to 7.6
+  hosts: all
+  gather_facts: yes
+  tasks:
+  - name: RHEL Distribution Version
+    debug: msg="RHEL version is {{ ansible_distribution_version}}"
+  - name: Rhel version check
+    debug: msg="Proceed with RHEL Upgrade validating RHEL version check"
+    failed_when: "{{ ansible_distribution_version }} == 7.6"
+#Use existing repos/process as per SBI
+  - name: Enable Repos for required RPMS needed for migration
+#This playbook uses subscription manager with valid RedHat access credentials.
+#command: subscription-manager register --username rdodia --password secret
+#command: subscription-manager list --available
+#command: subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
+    command: subscription-manager repos --enable rhel-6-server-extras-rpms 
+  - name: Enable Repos for required RPMS needed for migration
+    command: subscription-manager repos --enable rhel-6-server-optional-rpms
+  - name: Install preupgrade-assistant package
+    yum: name=preupgrade-assistant state=installed 
+  - name: Install preupgrade-assistant-el6toel7 package
+    yum: name=preupgrade-assistant-el6toel7 state=installed 
+  - name: Install preupgrade-assistant-el6toel7-data
+    yum: name=preupgrade-assistant-el6toel7-data state=installed 
+  - name: Install preupgrade-assistant-ui
+    yum: name=preupgrade-assistant-ui state=installed   
+  - name: Install redhat-upgrade-tool
+    yum: name=redhat-upgrade-tool state=installed
+  - name: Running the Preupgrade Assistant
+    command: preupg
+  - name: Enable SE Status
+    command: semodule -r sandbox
+  - name: OS Upgrade
+    command: redhat-upgrade-tool --iso /opt/path-dvd.iso --cleanup-post
+    notify: RestartServer
+  handlers:
+  - name: RestartServer
+    command: reboot
