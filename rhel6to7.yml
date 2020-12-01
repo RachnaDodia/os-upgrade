@@ -14,7 +14,7 @@
   - name: Register to Red Hat subscription manager
     command: subscription-manager register --username rdodia --password Naikash@1995
     ignore_errors: yes
-  - name: Attach subscription manager to the pool ID
+  - name: List Available subsriptions
     command: subscription-manager list --available
   - name: Attach subscription manager to the pool ID
     command: subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
