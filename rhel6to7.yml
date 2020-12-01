@@ -1,4 +1,5 @@
 #To Run this playbook without Ansible Tower via engine(in Check Mode): ansible-playbook -C rhel6to7.yml
+#To Run this playbook without Ansible Tower via engine(in RUN Mode): ansible-playbook rhel6to7.yml
 ---
 - name: Rhel upgrade 6.10 to 7.6
   hosts: all
