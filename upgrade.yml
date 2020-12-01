@@ -7,7 +7,7 @@
     debug: msg="Rhel version is {{ ansible_distribution_version}}"
   - name: Rhel version check
     debug: msg="Proceed with RHEL Upgrade validating RHEL version check"
-    failed_when: "{{ ansible_distribution_version }} == 7.6"
+    failed_when: "{{ ansible_distribution_version }} == 7.4 || {{ ansible_distribution_version }} == 7.5 || {{ ansible_distribution_version }} == 7.6 || {{ ansible_distribution_version }} == 7.7"
   - name: Enable Repos
     command: subscription-manager repos --enable rhel-6-server-extras-rpms 
   - name: Enable Repos
