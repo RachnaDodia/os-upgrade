@@ -1,0 +1,1985 @@
+Last login: Mon Nov 30 09:58:41 on ttys000
+(base) Rachnas-MacBook-Pro:~ rdodia$ ssh root@192.168.0.103
+The authenticity of host '192.168.0.103 (192.168.0.103)' can't be established.
+RSA key fingerprint is SHA256:VOizCdCS/MSU7fbxcxRIE7/T0EfwaJA44u8Kn9YmtEQ.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.0.103' (RSA) to the list of known hosts.
+root@192.168.0.103's password: 
+Last login: Mon Nov 30 10:49:23 2020 from 192.168.0.100
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[root@localhost ~]# yum update -y
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Update Process
+Resolving Dependencies
+--> Running transaction check
+---> Package adcli.x86_64 0:0.8.1-2.el6 will be updated
+---> Package adcli.x86_64 0:0.8.1-3.el6_10 will be an update
+---> Package autofs.x86_64 1:5.0.5-139.el6 will be updated
+---> Package autofs.x86_64 1:5.0.5-140.el6_10.1 will be an update
+---> Package bind-libs.x86_64 32:9.8.2-0.68.rc1.el6 will be updated
+---> Package bind-libs.x86_64 32:9.8.2-0.68.rc1.el6_10.8 will be an update
+---> Package bind-utils.x86_64 32:9.8.2-0.68.rc1.el6 will be updated
+---> Package bind-utils.x86_64 32:9.8.2-0.68.rc1.el6_10.8 will be an update
+---> Package binutils.x86_64 0:2.20.51.0.2-5.48.el6 will be updated
+---> Package binutils.x86_64 0:2.20.51.0.2-5.48.el6_10.1 will be an update
+---> Package ca-certificates.noarch 0:2018.2.22-65.1.el6 will be updated
+---> Package ca-certificates.noarch 0:2020.2.41-65.1.el6_10 will be an update
+---> Package cups.x86_64 1:1.4.2-79.el6 will be updated
+---> Package cups.x86_64 1:1.4.2-81.el6_10 will be an update
+---> Package cups-libs.x86_64 1:1.4.2-79.el6 will be updated
+---> Package cups-libs.x86_64 1:1.4.2-81.el6_10 will be an update
+---> Package curl.x86_64 0:7.19.7-53.el6_9 will be updated
+---> Package curl.x86_64 0:7.19.7-54.el6_10 will be an update
+---> Package dbus.x86_64 1:1.2.24-9.el6 will be updated
+---> Package dbus.x86_64 1:1.2.24-11.el6_10 will be an update
+---> Package dbus-libs.x86_64 1:1.2.24-9.el6 will be updated
+---> Package dbus-libs.x86_64 1:1.2.24-11.el6_10 will be an update
+---> Package dhclient.x86_64 12:4.1.1-60.P1.el6 will be updated
+---> Package dhclient.x86_64 12:4.1.1-63.P1.el6_10 will be an update
+---> Package dhcp-common.x86_64 12:4.1.1-60.P1.el6 will be updated
+---> Package dhcp-common.x86_64 12:4.1.1-63.P1.el6_10 will be an update
+---> Package freetype.x86_64 0:2.3.11-17.el6 will be updated
+---> Package freetype.x86_64 0:2.3.11-19.el6_10 will be an update
+---> Package ghostscript.x86_64 0:8.70-23.el6_9.2 will be updated
+---> Package ghostscript.x86_64 0:8.70-24.el6_10.2 will be an update
+---> Package glibc.x86_64 0:2.12-1.212.el6 will be updated
+---> Package glibc.x86_64 0:2.12-1.212.el6_10.3 will be an update
+---> Package glibc-common.x86_64 0:2.12-1.212.el6 will be updated
+---> Package glibc-common.x86_64 0:2.12-1.212.el6_10.3 will be an update
+---> Package glibc-devel.x86_64 0:2.12-1.212.el6 will be updated
+---> Package glibc-devel.x86_64 0:2.12-1.212.el6_10.3 will be an update
+---> Package glibc-headers.x86_64 0:2.12-1.212.el6 will be updated
+---> Package glibc-headers.x86_64 0:2.12-1.212.el6_10.3 will be an update
+---> Package gnupg2.x86_64 0:2.0.14-8.el6 will be updated
+---> Package gnupg2.x86_64 0:2.0.14-9.el6_10 will be an update
+---> Package insights-client.noarch 0:3.0.3-3.el6 will be updated
+---> Package insights-client.noarch 0:3.0.14-4.el6_10 will be an update
+---> Package java-1.7.0-openjdk.x86_64 1:1.7.0.181-2.6.14.10.el6 will be updated
+---> Package java-1.7.0-openjdk.x86_64 1:1.7.0.261-2.6.22.1.el6_10 will be an update
+---> Package kernel.x86_64 0:2.6.32-754.35.1.el6 will be installed
+---> Package kernel-firmware.noarch 0:2.6.32-754.el6 will be updated
+---> Package kernel-firmware.noarch 0:2.6.32-754.35.1.el6 will be an update
+---> Package kernel-headers.x86_64 0:2.6.32-754.el6 will be updated
+---> Package kernel-headers.x86_64 0:2.6.32-754.35.1.el6 will be an update
+---> Package kpartx.x86_64 0:0.4.9-106.el6 will be updated
+---> Package kpartx.x86_64 0:0.4.9-106.el6_10.1 will be an update
+---> Package libX11.x86_64 0:1.6.4-3.el6 will be updated
+---> Package libX11.x86_64 0:1.6.4-4.el6_10 will be an update
+---> Package libX11-common.noarch 0:1.6.4-3.el6 will be updated
+---> Package libX11-common.noarch 0:1.6.4-4.el6_10 will be an update
+---> Package libcgroup.x86_64 0:0.40.rc1-26.el6 will be updated
+---> Package libcgroup.x86_64 0:0.40.rc1-27.el6_10 will be an update
+---> Package libcurl.x86_64 0:7.19.7-53.el6_9 will be updated
+---> Package libcurl.x86_64 0:7.19.7-54.el6_10 will be an update
+---> Package libgudev1.x86_64 0:147-2.73.el6_8.2 will be updated
+---> Package libgudev1.x86_64 0:147-2.74.el6_10 will be an update
+---> Package libipa_hbac.x86_64 0:1.13.3-60.el6 will be updated
+---> Package libipa_hbac.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package libssh2.x86_64 0:1.4.2-2.el6_7.1 will be updated
+---> Package libssh2.x86_64 0:1.4.2-3.el6_10.1 will be an update
+---> Package libsss_idmap.x86_64 0:1.13.3-60.el6 will be updated
+---> Package libsss_idmap.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package libudev.x86_64 0:147-2.73.el6_8.2 will be updated
+---> Package libudev.x86_64 0:147-2.74.el6_10 will be an update
+---> Package mailx.x86_64 0:12.4-8.el6_6 will be updated
+---> Package mailx.x86_64 0:12.4-10.el6_10 will be an update
+---> Package microcode_ctl.x86_64 1:1.17-32.el6 will be updated
+---> Package microcode_ctl.x86_64 2:1.17-33.31.el6_10 will be an update
+---> Package nfs-utils.x86_64 1:1.2.3-78.el6 will be updated
+---> Package nfs-utils.x86_64 1:1.2.3-78.el6_10.2 will be an update
+---> Package nspr.x86_64 0:4.19.0-1.el6 will be updated
+---> Package nspr.x86_64 0:4.21.0-1.el6_10 will be an update
+---> Package nss.x86_64 0:3.36.0-8.el6 will be updated
+---> Package nss.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-softokn.x86_64 0:3.14.3-23.3.el6_8 will be updated
+---> Package nss-softokn.x86_64 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn-freebl.x86_64 0:3.14.3-23.3.el6_8 will be updated
+---> Package nss-softokn-freebl.x86_64 0:3.44.0-6.el6_10 will be an update
+---> Package nss-sysinit.x86_64 0:3.36.0-8.el6 will be updated
+---> Package nss-sysinit.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-tools.x86_64 0:3.36.0-8.el6 will be updated
+---> Package nss-tools.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-util.x86_64 0:3.36.0-1.el6 will be updated
+---> Package nss-util.x86_64 0:3.44.0-1.el6_10 will be an update
+---> Package ntp.x86_64 0:4.2.6p5-12.el6_9.2 will be updated
+---> Package ntp.x86_64 0:4.2.6p5-15.el6_10 will be an update
+---> Package ntpdate.x86_64 0:4.2.6p5-12.el6_9.2 will be updated
+---> Package ntpdate.x86_64 0:4.2.6p5-15.el6_10 will be an update
+---> Package openssh.x86_64 0:5.3p1-123.el6_9 will be updated
+---> Package openssh.x86_64 0:5.3p1-124.el6_10 will be an update
+---> Package openssh-clients.x86_64 0:5.3p1-123.el6_9 will be updated
+---> Package openssh-clients.x86_64 0:5.3p1-124.el6_10 will be an update
+---> Package openssh-server.x86_64 0:5.3p1-123.el6_9 will be updated
+---> Package openssh-server.x86_64 0:5.3p1-124.el6_10 will be an update
+---> Package openssl.x86_64 0:1.0.1e-57.el6 will be updated
+---> Package openssl.x86_64 0:1.0.1e-58.el6_10 will be an update
+---> Package perf.x86_64 0:2.6.32-754.el6 will be updated
+---> Package perf.x86_64 0:2.6.32-754.35.1.el6 will be an update
+---> Package polkit.x86_64 0:0.96-11.el6 will be updated
+---> Package polkit.x86_64 0:0.96-11.el6_10.1 will be an update
+---> Package poppler.x86_64 0:0.12.4-12.el6_9 will be updated
+---> Package poppler.x86_64 0:0.12.4-12.el6_10.1 will be an update
+---> Package poppler-utils.x86_64 0:0.12.4-12.el6_9 will be updated
+---> Package poppler-utils.x86_64 0:0.12.4-12.el6_10.1 will be an update
+---> Package procps.x86_64 0:3.2.8-45.el6_9.1 will be updated
+---> Package procps.x86_64 0:3.2.8-45.el6_9.3 will be an update
+---> Package python.x86_64 0:2.6.6-66.el6_8 will be updated
+---> Package python.x86_64 0:2.6.6-68.el6_10 will be an update
+---> Package python-libipa_hbac.x86_64 0:1.13.3-60.el6 will be updated
+---> Package python-libipa_hbac.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package python-libs.x86_64 0:2.6.6-66.el6_8 will be updated
+---> Package python-libs.x86_64 0:2.6.6-68.el6_10 will be an update
+---> Package python-paramiko.noarch 0:1.7.5-4.el6_9 will be updated
+---> Package python-paramiko.noarch 0:1.7.5-5.el6_10 will be an update
+---> Package python-sss-murmur.x86_64 0:1.13.3-60.el6 will be updated
+---> Package python-sss-murmur.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package python-sssdconfig.noarch 0:1.13.3-60.el6 will be updated
+---> Package python-sssdconfig.noarch 0:1.13.3-60.el6_10.2 will be an update
+---> Package ql2400-firmware.noarch 0:7.03.00-1.el6 will be updated
+---> Package ql2400-firmware.noarch 0:7.03.00-1.el6_5 will be an update
+---> Package ql2500-firmware.noarch 0:7.03.00-1.el6 will be updated
+---> Package ql2500-firmware.noarch 0:7.03.00-1.el6_5 will be an update
+---> Package redhat-release-server.x86_64 0:6Server-6.10.0.12.el6 will be updated
+---> Package redhat-release-server.x86_64 0:6Server-6.10.0.13.el6_10.8 will be an update
+---> Package samba-client.x86_64 0:3.6.23-51.el6 will be updated
+---> Package samba-client.x86_64 0:3.6.23-53.el6_10 will be an update
+---> Package samba-common.x86_64 0:3.6.23-51.el6 will be updated
+---> Package samba-common.x86_64 0:3.6.23-53.el6_10 will be an update
+---> Package samba-winbind.x86_64 0:3.6.23-51.el6 will be updated
+---> Package samba-winbind.x86_64 0:3.6.23-53.el6_10 will be an update
+---> Package samba-winbind-clients.x86_64 0:3.6.23-51.el6 will be updated
+---> Package samba-winbind-clients.x86_64 0:3.6.23-53.el6_10 will be an update
+---> Package sos.noarch 0:3.2-63.el6 will be updated
+---> Package sos.noarch 0:3.2-63.el6_10.4 will be an update
+---> Package sssd.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-ad.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-ad.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-client.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-client.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-common.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-common.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-common-pac.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-common-pac.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-ipa.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-ipa.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-krb5.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-krb5.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-krb5-common.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-krb5-common.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-ldap.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-ldap.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package sssd-proxy.x86_64 0:1.13.3-60.el6 will be updated
+---> Package sssd-proxy.x86_64 0:1.13.3-60.el6_10.2 will be an update
+---> Package subscription-manager.x86_64 0:1.20.10-7.el6 will be updated
+---> Package subscription-manager.x86_64 0:1.20.10-8.el6 will be an update
+---> Package subscription-manager-rhsm.x86_64 0:1.20.10-7.el6 will be updated
+---> Package subscription-manager-rhsm.x86_64 0:1.20.10-8.el6 will be an update
+---> Package subscription-manager-rhsm-certificates.x86_64 0:1.20.10-7.el6 will be updated
+---> Package subscription-manager-rhsm-certificates.x86_64 0:1.20.10-8.el6 will be an update
+---> Package sudo.x86_64 0:1.8.6p3-29.el6_9 will be updated
+---> Package sudo.x86_64 0:1.8.6p3-29.el6_10.3 will be an update
+---> Package tzdata.noarch 0:2018e-3.el6 will be updated
+---> Package tzdata.noarch 0:2020d-1.el6 will be an update
+---> Package tzdata-java.noarch 0:2018e-3.el6 will be updated
+---> Package tzdata-java.noarch 0:2020d-1.el6 will be an update
+---> Package udev.x86_64 0:147-2.73.el6_8.2 will be updated
+---> Package udev.x86_64 0:147-2.74.el6_10 will be an update
+---> Package vim-common.x86_64 2:7.4.629-5.el6_8.1 will be updated
+---> Package vim-common.x86_64 2:7.4.629-5.el6_10.2 will be an update
+---> Package vim-enhanced.x86_64 2:7.4.629-5.el6_8.1 will be updated
+---> Package vim-enhanced.x86_64 2:7.4.629-5.el6_10.2 will be an update
+---> Package vim-filesystem.x86_64 2:7.4.629-5.el6_8.1 will be updated
+---> Package vim-filesystem.x86_64 2:7.4.629-5.el6_10.2 will be an update
+---> Package vim-minimal.x86_64 2:7.4.629-5.el6_8.1 will be updated
+---> Package vim-minimal.x86_64 2:7.4.629-5.el6_10.2 will be an update
+---> Package yum-plugin-security.noarch 0:1.1.30-41.el6 will be updated
+---> Package yum-plugin-security.noarch 0:1.1.30-42.el6_10 will be an update
+---> Package yum-utils.noarch 0:1.1.30-41.el6 will be updated
+---> Package yum-utils.noarch 0:1.1.30-42.el6_10 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================
+ Package                                            Arch               Version                                    Repository                      Size
+=======================================================================================================================================================
+Installing:
+ kernel                                             x86_64             2.6.32-754.35.1.el6                        rhel-6-server-rpms              32 M
+Updating:
+ adcli                                              x86_64             0.8.1-3.el6_10                             rhel-6-server-rpms             100 k
+ autofs                                             x86_64             1:5.0.5-140.el6_10.1                       rhel-6-server-rpms             730 k
+ bind-libs                                          x86_64             32:9.8.2-0.68.rc1.el6_10.8                 rhel-6-server-rpms             893 k
+ bind-utils                                         x86_64             32:9.8.2-0.68.rc1.el6_10.8                 rhel-6-server-rpms             190 k
+ binutils                                           x86_64             2.20.51.0.2-5.48.el6_10.1                  rhel-6-server-rpms             2.8 M
+ ca-certificates                                    noarch             2020.2.41-65.1.el6_10                      rhel-6-server-rpms             909 k
+ cups                                               x86_64             1:1.4.2-81.el6_10                          rhel-6-server-rpms             2.3 M
+ cups-libs                                          x86_64             1:1.4.2-81.el6_10                          rhel-6-server-rpms             323 k
+ curl                                               x86_64             7.19.7-54.el6_10                           rhel-6-server-rpms             198 k
+ dbus                                               x86_64             1:1.2.24-11.el6_10                         rhel-6-server-rpms             211 k
+ dbus-libs                                          x86_64             1:1.2.24-11.el6_10                         rhel-6-server-rpms             127 k
+ dhclient                                           x86_64             12:4.1.1-63.P1.el6_10                      rhel-6-server-rpms             323 k
+ dhcp-common                                        x86_64             12:4.1.1-63.P1.el6_10                      rhel-6-server-rpms             145 k
+ freetype                                           x86_64             2.3.11-19.el6_10                           rhel-6-server-rpms             361 k
+ ghostscript                                        x86_64             8.70-24.el6_10.2                           rhel-6-server-rpms             4.4 M
+ glibc                                              x86_64             2.12-1.212.el6_10.3                        rhel-6-server-rpms             3.8 M
+ glibc-common                                       x86_64             2.12-1.212.el6_10.3                        rhel-6-server-rpms              14 M
+ glibc-devel                                        x86_64             2.12-1.212.el6_10.3                        rhel-6-server-rpms             991 k
+ glibc-headers                                      x86_64             2.12-1.212.el6_10.3                        rhel-6-server-rpms             620 k
+ gnupg2                                             x86_64             2.0.14-9.el6_10                            rhel-6-server-rpms             1.6 M
+ insights-client                                    noarch             3.0.14-4.el6_10                            rhel-6-server-rpms             931 k
+ java-1.7.0-openjdk                                 x86_64             1:1.7.0.261-2.6.22.1.el6_10                rhel-6-server-rpms              27 M
+ kernel-firmware                                    noarch             2.6.32-754.35.1.el6                        rhel-6-server-rpms              29 M
+ kernel-headers                                     x86_64             2.6.32-754.35.1.el6                        rhel-6-server-rpms             4.6 M
+ kpartx                                             x86_64             0.4.9-106.el6_10.1                         rhel-6-server-rpms              72 k
+ libX11                                             x86_64             1.6.4-4.el6_10                             rhel-6-server-rpms             587 k
+ libX11-common                                      noarch             1.6.4-4.el6_10                             rhel-6-server-rpms             171 k
+ libcgroup                                          x86_64             0.40.rc1-27.el6_10                         rhel-6-server-rpms             131 k
+ libcurl                                            x86_64             7.19.7-54.el6_10                           rhel-6-server-rpms             170 k
+ libgudev1                                          x86_64             147-2.74.el6_10                            rhel-6-server-rpms              65 k
+ libipa_hbac                                        x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             119 k
+ libssh2                                            x86_64             1.4.2-3.el6_10.1                           rhel-6-server-rpms             123 k
+ libsss_idmap                                       x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             125 k
+ libudev                                            x86_64             147-2.74.el6_10                            rhel-6-server-rpms              78 k
+ mailx                                              x86_64             12.4-10.el6_10                             rhel-6-server-rpms             235 k
+ microcode_ctl                                      x86_64             2:1.17-33.31.el6_10                        rhel-6-server-rpms             4.6 M
+ nfs-utils                                          x86_64             1:1.2.3-78.el6_10.2                        rhel-6-server-rpms             337 k
+ nspr                                               x86_64             4.21.0-1.el6_10                            rhel-6-server-rpms             114 k
+ nss                                                x86_64             3.44.0-7.el6_10                            rhel-6-server-rpms             883 k
+ nss-softokn                                        x86_64             3.44.0-6.el6_10                            rhel-6-server-rpms             288 k
+ nss-softokn-freebl                                 x86_64             3.44.0-6.el6_10                            rhel-6-server-rpms             202 k
+ nss-sysinit                                        x86_64             3.44.0-7.el6_10                            rhel-6-server-rpms              54 k
+ nss-tools                                          x86_64             3.44.0-7.el6_10                            rhel-6-server-rpms             472 k
+ nss-util                                           x86_64             3.44.0-1.el6_10                            rhel-6-server-rpms              73 k
+ ntp                                                x86_64             4.2.6p5-15.el6_10                          rhel-6-server-rpms             600 k
+ ntpdate                                            x86_64             4.2.6p5-15.el6_10                          rhel-6-server-rpms              79 k
+ openssh                                            x86_64             5.3p1-124.el6_10                           rhel-6-server-rpms             278 k
+ openssh-clients                                    x86_64             5.3p1-124.el6_10                           rhel-6-server-rpms             444 k
+ openssh-server                                     x86_64             5.3p1-124.el6_10                           rhel-6-server-rpms             330 k
+ openssl                                            x86_64             1.0.1e-58.el6_10                           rhel-6-server-rpms             1.5 M
+ perf                                               x86_64             2.6.32-754.35.1.el6                        rhel-6-server-rpms             4.8 M
+ polkit                                             x86_64             0.96-11.el6_10.1                           rhel-6-server-rpms             163 k
+ poppler                                            x86_64             0.12.4-12.el6_10.1                         rhel-6-server-rpms             559 k
+ poppler-utils                                      x86_64             0.12.4-12.el6_10.1                         rhel-6-server-rpms              74 k
+ procps                                             x86_64             3.2.8-45.el6_9.3                           rhel-6-server-rpms             220 k
+ python                                             x86_64             2.6.6-68.el6_10                            rhel-6-server-rpms              76 k
+ python-libipa_hbac                                 x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             114 k
+ python-libs                                        x86_64             2.6.6-68.el6_10                            rhel-6-server-rpms             5.3 M
+ python-paramiko                                    noarch             1.7.5-5.el6_10                             rhel-6-server-rpms             729 k
+ python-sss-murmur                                  x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             104 k
+ python-sssdconfig                                  noarch             1.13.3-60.el6_10.2                         rhel-6-server-rpms             147 k
+ ql2400-firmware                                    noarch             7.03.00-1.el6_5                            rhel-6-server-rpms              94 k
+ ql2500-firmware                                    noarch             7.03.00-1.el6_5                            rhel-6-server-rpms             118 k
+ redhat-release-server                              x86_64             6Server-6.10.0.13.el6_10.8                 rhel-6-server-rpms              64 k
+ samba-client                                       x86_64             3.6.23-53.el6_10                           rhel-6-server-rpms              11 M
+ samba-common                                       x86_64             3.6.23-53.el6_10                           rhel-6-server-rpms              10 M
+ samba-winbind                                      x86_64             3.6.23-53.el6_10                           rhel-6-server-rpms             2.2 M
+ samba-winbind-clients                              x86_64             3.6.23-53.el6_10                           rhel-6-server-rpms             2.0 M
+ sos                                                noarch             3.2-63.el6_10.4                            rhel-6-server-rpms             326 k
+ sssd                                               x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             114 k
+ sssd-ad                                            x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             220 k
+ sssd-client                                        x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             171 k
+ sssd-common                                        x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             1.1 M
+ sssd-common-pac                                    x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             154 k
+ sssd-ipa                                           x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             285 k
+ sssd-krb5                                          x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             149 k
+ sssd-krb5-common                                   x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             170 k
+ sssd-ldap                                          x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             215 k
+ sssd-proxy                                         x86_64             1.13.3-60.el6_10.2                         rhel-6-server-rpms             143 k
+ subscription-manager                               x86_64             1.20.10-8.el6                              rhel-6-server-rpms             1.0 M
+ subscription-manager-rhsm                          x86_64             1.20.10-8.el6                              rhel-6-server-rpms             286 k
+ subscription-manager-rhsm-certificates             x86_64             1.20.10-8.el6                              rhel-6-server-rpms             201 k
+ sudo                                               x86_64             1.8.6p3-29.el6_10.3                        rhel-6-server-rpms             713 k
+ tzdata                                             noarch             2020d-1.el6                                rhel-6-server-rpms             514 k
+ tzdata-java                                        noarch             2020d-1.el6                                rhel-6-server-rpms             190 k
+ udev                                               x86_64             147-2.74.el6_10                            rhel-6-server-rpms             358 k
+ vim-common                                         x86_64             2:7.4.629-5.el6_10.2                       rhel-6-server-rpms             6.7 M
+ vim-enhanced                                       x86_64             2:7.4.629-5.el6_10.2                       rhel-6-server-rpms             1.0 M
+ vim-filesystem                                     x86_64             2:7.4.629-5.el6_10.2                       rhel-6-server-rpms              15 k
+ vim-minimal                                        x86_64             2:7.4.629-5.el6_10.2                       rhel-6-server-rpms             422 k
+ yum-plugin-security                                noarch             1.1.30-42.el6_10                           rhel-6-server-rpms              43 k
+ yum-utils                                          noarch             1.1.30-42.el6_10                           rhel-6-server-rpms             114 k
+
+Transaction Summary
+=======================================================================================================================================================
+Install       1 Package(s)
+Upgrade      92 Package(s)
+
+Total download size: 193 M
+Downloading Packages:
+(1/93): adcli-0.8.1-3.el6_10.x86_64.rpm                                                                                         | 100 kB     00:00     
+(2/93): autofs-5.0.5-140.el6_10.1.x86_64.rpm                                                                                    | 730 kB     00:00     
+(3/93): bind-libs-9.8.2-0.68.rc1.el6_10.8.x86_64.rpm                                                                            | 893 kB     00:00     
+(4/93): bind-utils-9.8.2-0.68.rc1.el6_10.8.x86_64.rpm                                                                           | 190 kB     00:00     
+(5/93): binutils-2.20.51.0.2-5.48.el6_10.1.x86_64.rpm                                                                           | 2.8 MB     00:01     
+(6/93): ca-certificates-2020.2.41-65.1.el6_10.noarch.rpm                                                                        | 909 kB     00:00     
+(7/93): cups-1.4.2-81.el6_10.x86_64.rpm                                                                                         | 2.3 MB     00:01     
+(8/93): cups-libs-1.4.2-81.el6_10.x86_64.rpm                                                                                    | 323 kB     00:00     
+(9/93): curl-7.19.7-54.el6_10.x86_64.rpm                                                                                        | 198 kB     00:01     
+(10/93): dbus-1.2.24-11.el6_10.x86_64.rpm                                                                                       | 211 kB     00:00     
+(11/93): dbus-libs-1.2.24-11.el6_10.x86_64.rpm                                                                                  | 127 kB     00:00     
+(12/93): dhclient-4.1.1-63.P1.el6_10.x86_64.rpm                                                                                 | 323 kB     00:00     
+(13/93): dhcp-common-4.1.1-63.P1.el6_10.x86_64.rpm                                                                              | 145 kB     00:00     
+(14/93): freetype-2.3.11-19.el6_10.x86_64.rpm                                                                                   | 361 kB     00:00     
+(15/93): ghostscript-8.70-24.el6_10.2.x86_64.rpm                                                                                | 4.4 MB     00:02     
+(16/93): glibc-2.12-1.212.el6_10.3.x86_64.rpm                                                                                   | 3.8 MB     00:02     
+(17/93): glibc-common-2.12-1.212.el6_10.3.x86_64.rpm                                                                            |  14 MB     00:08     
+(18/93): glibc-devel-2.12-1.212.el6_10.3.x86_64.rpm                                                                             | 991 kB     00:00     
+(19/93): glibc-headers-2.12-1.212.el6_10.3.x86_64.rpm                                                                           | 620 kB     00:00     
+(20/93): gnupg2-2.0.14-9.el6_10.x86_64.rpm                                                                                      | 1.6 MB     00:01     
+(21/93): insights-client-3.0.14-4.el6_10.noarch.rpm                                                                             | 931 kB     00:00     
+(22/93): java-1.7.0-openjdk-1.7.0.261-2.6.22.1.el6_10.x86_64.rpm                                                                |  27 MB     00:17     
+(23/93): kernel-2.6.32-754.35.1.el6.x86_64.rpm                                                                                  |  32 MB     00:18     
+(24/93): kernel-firmware-2.6.32-754.35.1.el6.noarch.rpm                                                                         |  29 MB     00:16     
+(25/93): kernel-headers-2.6.32-754.35.1.el6.x86_64.rpm                                                                          | 4.6 MB     00:02     
+(26/93): kpartx-0.4.9-106.el6_10.1.x86_64.rpm                                                                                   |  72 kB     00:00     
+(27/93): libX11-1.6.4-4.el6_10.x86_64.rpm                                                                                       | 587 kB     00:00     
+(28/93): libX11-common-1.6.4-4.el6_10.noarch.rpm                                                                                | 171 kB     00:00     
+(29/93): libcgroup-0.40.rc1-27.el6_10.x86_64.rpm                                                                                | 131 kB     00:00     
+(30/93): libcurl-7.19.7-54.el6_10.x86_64.rpm                                                                                    | 170 kB     00:00     
+(31/93): libgudev1-147-2.74.el6_10.x86_64.rpm                                                                                   |  65 kB     00:00     
+(32/93): libipa_hbac-1.13.3-60.el6_10.2.x86_64.rpm                                                                              | 119 kB     00:00     
+(33/93): libssh2-1.4.2-3.el6_10.1.x86_64.rpm                                                                                    | 123 kB     00:00     
+(34/93): libsss_idmap-1.13.3-60.el6_10.2.x86_64.rpm                                                                             | 125 kB     00:00     
+(35/93): libudev-147-2.74.el6_10.x86_64.rpm                                                                                     |  78 kB     00:00     
+(36/93): mailx-12.4-10.el6_10.x86_64.rpm                                                                                        | 235 kB     00:00     
+(37/93): microcode_ctl-1.17-33.31.el6_10.x86_64.rpm                                                                             | 4.6 MB     00:02     
+(38/93): nfs-utils-1.2.3-78.el6_10.2.x86_64.rpm                                                                                 | 337 kB     00:00     
+(39/93): nspr-4.21.0-1.el6_10.x86_64.rpm                                                                                        | 114 kB     00:00     
+(40/93): nss-3.44.0-7.el6_10.x86_64.rpm                                                                                         | 883 kB     00:00     
+(41/93): nss-softokn-3.44.0-6.el6_10.x86_64.rpm                                                                                 | 288 kB     00:00     
+(42/93): nss-softokn-freebl-3.44.0-6.el6_10.x86_64.rpm                                                                          | 202 kB     00:00     
+(43/93): nss-sysinit-3.44.0-7.el6_10.x86_64.rpm                                                                                 |  54 kB     00:00     
+(44/93): nss-tools-3.44.0-7.el6_10.x86_64.rpm                                                                                   | 472 kB     00:00     
+(45/93): nss-util-3.44.0-1.el6_10.x86_64.rpm                                                                                    |  73 kB     00:00     
+(46/93): ntp-4.2.6p5-15.el6_10.x86_64.rpm                                                                                       | 600 kB     00:00     
+(47/93): ntpdate-4.2.6p5-15.el6_10.x86_64.rpm                                                                                   |  79 kB     00:00     
+(48/93): openssh-5.3p1-124.el6_10.x86_64.rpm                                                                                    | 278 kB     00:00     
+(49/93): openssh-clients-5.3p1-124.el6_10.x86_64.rpm                                                                            | 444 kB     00:00     
+(50/93): openssh-server-5.3p1-124.el6_10.x86_64.rpm                                                                             | 330 kB     00:00     
+(51/93): openssl-1.0.1e-58.el6_10.x86_64.rpm                                                                                    | 1.5 MB     00:01     
+(52/93): perf-2.6.32-754.35.1.el6.x86_64.rpm                                                                                    | 4.8 MB     00:02     
+(53/93): polkit-0.96-11.el6_10.1.x86_64.rpm                                                                                     | 163 kB     00:00     
+(54/93): poppler-0.12.4-12.el6_10.1.x86_64.rpm                                                                                  | 559 kB     00:00     
+(55/93): poppler-utils-0.12.4-12.el6_10.1.x86_64.rpm                                                                            |  74 kB     00:00     
+(56/93): procps-3.2.8-45.el6_9.3.x86_64.rpm                                                                                     | 220 kB     00:00     
+(57/93): python-2.6.6-68.el6_10.x86_64.rpm                                                                                      |  76 kB     00:00     
+(58/93): python-libipa_hbac-1.13.3-60.el6_10.2.x86_64.rpm                                                                       | 114 kB     00:00     
+(59/93): python-libs-2.6.6-68.el6_10.x86_64.rpm                                                                                 | 5.3 MB     00:03     
+(60/93): python-paramiko-1.7.5-5.el6_10.noarch.rpm                                                                              | 729 kB     00:00     
+(61/93): python-sss-murmur-1.13.3-60.el6_10.2.x86_64.rpm                                                                        | 104 kB     00:00     
+(62/93): python-sssdconfig-1.13.3-60.el6_10.2.noarch.rpm                                                                        | 147 kB     00:00     
+(63/93): ql2400-firmware-7.03.00-1.el6_5.noarch.rpm                                                                             |  94 kB     00:00     
+(64/93): ql2500-firmware-7.03.00-1.el6_5.noarch.rpm                                                                             | 118 kB     00:00     
+(65/93): redhat-release-server-6Server-6.10.0.13.el6_10.8.x86_64.rpm                                                            |  64 kB     00:00     
+(66/93): samba-client-3.6.23-53.el6_10.x86_64.rpm                                                                               |  11 MB     00:06     
+(67/93): samba-common-3.6.23-53.el6_10.x86_64.rpm                                                                               |  10 MB     00:05     
+(68/93): samba-winbind-3.6.23-53.el6_10.x86_64.rpm                                                                              | 2.2 MB     00:01     
+(69/93): samba-winbind-clients-3.6.23-53.el6_10.x86_64.rpm                                                                      | 2.0 MB     00:01     
+(70/93): sos-3.2-63.el6_10.4.noarch.rpm                                                                                         | 326 kB     00:00     
+(71/93): sssd-1.13.3-60.el6_10.2.x86_64.rpm                                                                                     | 114 kB     00:00     
+(72/93): sssd-ad-1.13.3-60.el6_10.2.x86_64.rpm                                                                                  | 220 kB     00:00     
+(73/93): sssd-client-1.13.3-60.el6_10.2.x86_64.rpm                                                                              | 171 kB     00:00     
+(74/93): sssd-common-1.13.3-60.el6_10.2.x86_64.rpm                                                                              | 1.1 MB     00:00     
+(75/93): sssd-common-pac-1.13.3-60.el6_10.2.x86_64.rpm                                                                          | 154 kB     00:00     
+(76/93): sssd-ipa-1.13.3-60.el6_10.2.x86_64.rpm                                                                                 | 285 kB     00:00     
+(77/93): sssd-krb5-1.13.3-60.el6_10.2.x86_64.rpm                                                                                | 149 kB     00:00     
+(78/93): sssd-krb5-common-1.13.3-60.el6_10.2.x86_64.rpm                                                                         | 170 kB     00:00     
+(79/93): sssd-ldap-1.13.3-60.el6_10.2.x86_64.rpm                                                                                | 215 kB     00:00     
+(80/93): sssd-proxy-1.13.3-60.el6_10.2.x86_64.rpm                                                                               | 143 kB     00:00     
+(81/93): subscription-manager-1.20.10-8.el6.x86_64.rpm                                                                          | 1.0 MB     00:00     
+(82/93): subscription-manager-rhsm-1.20.10-8.el6.x86_64.rpm                                                                     | 286 kB     00:00     
+(83/93): subscription-manager-rhsm-certificates-1.20.10-8.el6.x86_64.rpm                                                        | 201 kB     00:00     
+(84/93): sudo-1.8.6p3-29.el6_10.3.x86_64.rpm                                                                                    | 713 kB     00:00     
+(85/93): tzdata-2020d-1.el6.noarch.rpm                                                                                          | 514 kB     00:00     
+(86/93): tzdata-java-2020d-1.el6.noarch.rpm                                                                                     | 190 kB     00:00     
+(87/93): udev-147-2.74.el6_10.x86_64.rpm                                                                                        | 358 kB     00:00     
+(88/93): vim-common-7.4.629-5.el6_10.2.x86_64.rpm                                                                               | 6.7 MB     00:03     
+(89/93): vim-enhanced-7.4.629-5.el6_10.2.x86_64.rpm                                                                             | 1.0 MB     00:00     
+(90/93): vim-filesystem-7.4.629-5.el6_10.2.x86_64.rpm                                                                           |  15 kB     00:00     
+(91/93): vim-minimal-7.4.629-5.el6_10.2.x86_64.rpm                                                                              | 422 kB     00:00     
+(92/93): yum-plugin-security-1.1.30-42.el6_10.noarch.rpm                                                                        |  43 kB     00:00     
+(93/93): yum-utils-1.1.30-42.el6_10.noarch.rpm                                                                                  | 114 kB     00:00     
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  1.1 MB/s | 193 MB     02:59     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+Error in PRETRANS scriptlet in rpm package 1:java-1.7.0-openjdk-1.7.0.261-2.6.22.1.el6_10.x86_64
+error: lua script failed: /usr/libexec/copy_jdk_configs.lua:272: attempt to index global 'file' (a nil value)
+  Updating   : ca-certificates-2020.2.41-65.1.el6_10.noarch                                                                                      1/185 
+  Updating   : 12:dhcp-common-4.1.1-63.P1.el6_10.x86_64                                                                                          2/185 
+  Updating   : kernel-firmware-2.6.32-754.35.1.el6.noarch                                                                                        3/185 
+  Installing : kernel-2.6.32-754.35.1.el6.x86_64                                                                                                 4/185 
+  Updating   : subscription-manager-rhsm-certificates-1.20.10-8.el6.x86_64                                                                       5/185 
+  Updating   : libX11-common-1.6.4-4.el6_10.noarch                                                                                               6/185 
+  Updating   : kernel-headers-2.6.32-754.35.1.el6.x86_64                                                                                         7/185 
+  Updating   : 2:vim-filesystem-7.4.629-5.el6_10.2.x86_64                                                                                        8/185 
+  Updating   : tzdata-java-2020d-1.el6.noarch                                                                                                    9/185 
+  Updating   : tzdata-2020d-1.el6.noarch                                                                                                        10/185 
+  Updating   : nss-softokn-freebl-3.44.0-6.el6_10.x86_64                                                                                        11/185 
+  Updating   : glibc-common-2.12-1.212.el6_10.3.x86_64                                                                                          12/185 
+  Updating   : glibc-2.12-1.212.el6_10.3.x86_64                                                                                                 13/185 
+  Updating   : nspr-4.21.0-1.el6_10.x86_64                                                                                                      14/185 
+  Updating   : nss-util-3.44.0-1.el6_10.x86_64                                                                                                  15/185 
+  Updating   : openssl-1.0.1e-58.el6_10.x86_64                                                                                                  16/185 
+  Updating   : 1:dbus-libs-1.2.24-11.el6_10.x86_64                                                                                              17/185 
+  Updating   : python-libs-2.6.6-68.el6_10.x86_64                                                                                               18/185 
+  Updating   : python-2.6.6-68.el6_10.x86_64                                                                                                    19/185 
+  Updating   : libsss_idmap-1.13.3-60.el6_10.2.x86_64                                                                                           20/185 
+  Updating   : nss-softokn-3.44.0-6.el6_10.x86_64                                                                                               21/185 
+  Updating   : nss-3.44.0-7.el6_10.x86_64                                                                                                       22/185 
+  Updating   : nss-sysinit-3.44.0-7.el6_10.x86_64                                                                                               23/185 
+  Updating   : freetype-2.3.11-19.el6_10.x86_64                                                                                                 24/185 
+  Updating   : 1:cups-libs-1.4.2-81.el6_10.x86_64                                                                                               25/185 
+  Updating   : openssh-5.3p1-124.el6_10.x86_64                                                                                                  26/185 
+  Updating   : 1:dbus-1.2.24-11.el6_10.x86_64                                                                                                   27/185 
+  Updating   : libssh2-1.4.2-3.el6_10.1.x86_64                                                                                                  28/185 
+  Updating   : libcurl-7.19.7-54.el6_10.x86_64                                                                                                  29/185 
+  Updating   : libipa_hbac-1.13.3-60.el6_10.2.x86_64                                                                                            30/185 
+  Updating   : libX11-1.6.4-4.el6_10.x86_64                                                                                                     31/185 
+  Updating   : gnupg2-2.0.14-9.el6_10.x86_64                                                                                                    32/185 
+  Updating   : poppler-0.12.4-12.el6_10.1.x86_64                                                                                                33/185 
+  Updating   : poppler-utils-0.12.4-12.el6_10.1.x86_64                                                                                          34/185 
+  Updating   : python-sssdconfig-1.13.3-60.el6_10.2.noarch                                                                                      35/185 
+  Updating   : subscription-manager-rhsm-1.20.10-8.el6.x86_64                                                                                   36/185 
+  Updating   : ntpdate-4.2.6p5-15.el6_10.x86_64                                                                                                 37/185 
+  Updating   : 32:bind-libs-9.8.2-0.68.rc1.el6_10.8.x86_64                                                                                      38/185 
+  Updating   : 32:bind-utils-9.8.2-0.68.rc1.el6_10.8.x86_64                                                                                     39/185 
+  Updating   : libcgroup-0.40.rc1-27.el6_10.x86_64                                                                                              40/185 
+  Updating   : samba-winbind-3.6.23-53.el6_10.x86_64                                                                                            41/185 
+  Updating   : samba-winbind-clients-3.6.23-53.el6_10.x86_64                                                                                    42/185 
+  Updating   : samba-common-3.6.23-53.el6_10.x86_64                                                                                             43/185 
+  Updating   : glibc-headers-2.12-1.212.el6_10.3.x86_64                                                                                         44/185 
+  Updating   : 2:vim-common-7.4.629-5.el6_10.2.x86_64                                                                                           45/185 
+  Updating   : sssd-client-1.13.3-60.el6_10.2.x86_64                                                                                            46/185 
+  Updating   : sssd-common-1.13.3-60.el6_10.2.x86_64                                                                                            47/185 
+  Updating   : sssd-krb5-common-1.13.3-60.el6_10.2.x86_64                                                                                       48/185 
+  Updating   : sssd-common-pac-1.13.3-60.el6_10.2.x86_64                                                                                        49/185 
+  Updating   : sssd-ipa-1.13.3-60.el6_10.2.x86_64                                                                                               50/185 
+  Updating   : sssd-ad-1.13.3-60.el6_10.2.x86_64                                                                                                51/185 
+  Updating   : sssd-krb5-1.13.3-60.el6_10.2.x86_64                                                                                              52/185 
+  Updating   : sssd-ldap-1.13.3-60.el6_10.2.x86_64                                                                                              53/185 
+  Updating   : sssd-proxy-1.13.3-60.el6_10.2.x86_64                                                                                             54/185 
+  Updating   : procps-3.2.8-45.el6_9.3.x86_64                                                                                                   55/185 
+  Updating   : 2:vim-minimal-7.4.629-5.el6_10.2.x86_64                                                                                          56/185 
+  Updating   : udev-147-2.74.el6_10.x86_64                                                                                                      57/185 
+  Updating   : libudev-147-2.74.el6_10.x86_64                                                                                                   58/185 
+  Updating   : libgudev1-147-2.74.el6_10.x86_64                                                                                                 59/185 
+  Updating   : 1:cups-1.4.2-81.el6_10.x86_64                                                                                                    60/185 
+  Updating   : sudo-1.8.6p3-29.el6_10.3.x86_64                                                                                                  61/185 
+  Updating   : 1:autofs-5.0.5-140.el6_10.1.x86_64                                                                                               62/185 
+  Updating   : sssd-1.13.3-60.el6_10.2.x86_64                                                                                                   63/185 
+  Updating   : 2:vim-enhanced-7.4.629-5.el6_10.2.x86_64                                                                                         64/185 
+  Updating   : glibc-devel-2.12-1.212.el6_10.3.x86_64                                                                                           65/185 
+  Updating   : samba-client-3.6.23-53.el6_10.x86_64                                                                                             66/185 
+  Updating   : insights-client-3.0.14-4.el6_10.noarch                                                                                           67/185 
+  Updating   : ntp-4.2.6p5-15.el6_10.x86_64                                                                                                     68/185 
+  Updating   : subscription-manager-1.20.10-8.el6.x86_64                                                                                        69/185 
+  Updating   : ghostscript-8.70-24.el6_10.2.x86_64                                                                                              70/185 
+  Updating   : python-libipa_hbac-1.13.3-60.el6_10.2.x86_64                                                                                     71/185 
+  Updating   : curl-7.19.7-54.el6_10.x86_64                                                                                                     72/185 
+  Updating   : polkit-0.96-11.el6_10.1.x86_64                                                                                                   73/185 
+  Updating   : openssh-clients-5.3p1-124.el6_10.x86_64                                                                                          74/185 
+  Updating   : openssh-server-5.3p1-124.el6_10.x86_64                                                                                           75/185 
+  Updating   : nss-tools-3.44.0-7.el6_10.x86_64                                                                                                 76/185 
+  Updating   : mailx-12.4-10.el6_10.x86_64                                                                                                      77/185 
+  Updating   : python-paramiko-1.7.5-5.el6_10.noarch                                                                                            78/185 
+  Updating   : perf-2.6.32-754.35.1.el6.x86_64                                                                                                  79/185 
+  Updating   : 1:nfs-utils-1.2.3-78.el6_10.2.x86_64                                                                                             80/185 
+  Updating   : sos-3.2-63.el6_10.4.noarch                                                                                                       81/185 
+  Updating   : python-sss-murmur-1.13.3-60.el6_10.2.x86_64                                                                                      82/185 
+  Updating   : yum-utils-1.1.30-42.el6_10.noarch                                                                                                83/185 
+  Updating   : 2:microcode_ctl-1.17-33.31.el6_10.x86_64                                                                                         84/185 
+  Updating   : adcli-0.8.1-3.el6_10.x86_64                                                                                                      85/185 
+  Updating   : binutils-2.20.51.0.2-5.48.el6_10.1.x86_64                                                                                        86/185 
+  Updating   : 12:dhclient-4.1.1-63.P1.el6_10.x86_64                                                                                            87/185 
+  Updating   : kpartx-0.4.9-106.el6_10.1.x86_64                                                                                                 88/185 
+  Updating   : redhat-release-server-6Server-6.10.0.13.el6_10.8.x86_64                                                                          89/185 
+  Updating   : ql2400-firmware-7.03.00-1.el6_5.noarch                                                                                           90/185 
+  Updating   : yum-plugin-security-1.1.30-42.el6_10.noarch                                                                                      91/185 
+  Updating   : ql2500-firmware-7.03.00-1.el6_5.noarch                                                                                           92/185 
+  Cleanup    : sssd-1.13.3-60.el6.x86_64                                                                                                        93/185 
+  Cleanup    : sssd-ipa-1.13.3-60.el6.x86_64                                                                                                    94/185 
+  Cleanup    : sssd-ad-1.13.3-60.el6.x86_64                                                                                                     95/185 
+  Cleanup    : sssd-ldap-1.13.3-60.el6.x86_64                                                                                                   96/185 
+  Cleanup    : sssd-common-pac-1.13.3-60.el6.x86_64                                                                                             97/185 
+  Cleanup    : sssd-krb5-1.13.3-60.el6.x86_64                                                                                                   98/185 
+  Cleanup    : sssd-proxy-1.13.3-60.el6.x86_64                                                                                                  99/185 
+  Cleanup    : python-libipa_hbac-1.13.3-60.el6.x86_64                                                                                         100/185 
+  Cleanup    : python-sss-murmur-1.13.3-60.el6.x86_64                                                                                          101/185 
+  Cleanup    : sssd-krb5-common-1.13.3-60.el6.x86_64                                                                                           102/185 
+  Cleanup    : sssd-common-1.13.3-60.el6.x86_64                                                                                                103/185 
+  Cleanup    : insights-client-3.0.3-3.el6.noarch                                                                                              104/185 
+  Cleanup    : perf-2.6.32-754.el6.x86_64                                                                                                      105/185 
+  Cleanup    : glibc-devel-2.12-1.212.el6.x86_64                                                                                               106/185 
+  Cleanup    : glibc-headers-2.12-1.212.el6.x86_64                                                                                             107/185 
+  Cleanup    : sssd-client-1.13.3-60.el6.x86_64                                                                                                108/185 
+  Cleanup    : libsss_idmap-1.13.3-60.el6.x86_64                                                                                               109/185 
+  Cleanup    : libipa_hbac-1.13.3-60.el6.x86_64                                                                                                110/185 
+  Cleanup    : python-sssdconfig-1.13.3-60.el6.noarch                                                                                          111/185 
+  Cleanup    : yum-utils-1.1.30-41.el6.noarch                                                                                                  112/185 
+  Cleanup    : sos-3.2-63.el6.noarch                                                                                                           113/185 
+  Cleanup    : python-paramiko-1.7.5-4.el6_9.noarch                                                                                            114/185 
+  Cleanup    : kernel-headers-2.6.32-754.el6.x86_64                                                                                            115/185 
+  Cleanup    : redhat-release-server-6Server-6.10.0.12.el6.x86_64                                                                              116/185 
+  Cleanup    : kernel-firmware-2.6.32-754.el6.noarch                                                                                           117/185 
+  Cleanup    : ql2400-firmware-7.03.00-1.el6.noarch                                                                                            118/185 
+  Cleanup    : yum-plugin-security-1.1.30-41.el6.noarch                                                                                        119/185 
+  Cleanup    : ql2500-firmware-7.03.00-1.el6.noarch                                                                                            120/185 
+  Cleanup    : curl-7.19.7-53.el6_9.x86_64                                                                                                     121/185 
+  Cleanup    : nss-tools-3.36.0-8.el6.x86_64                                                                                                   122/185 
+  Cleanup    : 1:cups-1.4.2-79.el6.x86_64                                                                                                      123/185 
+  Cleanup    : openssh-clients-5.3p1-123.el6_9.x86_64                                                                                          124/185 
+  Cleanup    : poppler-utils-0.12.4-12.el6_9.x86_64                                                                                            125/185 
+  Cleanup    : openssh-server-5.3p1-123.el6_9.x86_64                                                                                           126/185 
+  Cleanup    : openssh-5.3p1-123.el6_9.x86_64                                                                                                  127/185 
+  Cleanup    : 32:bind-utils-9.8.2-0.68.rc1.el6.x86_64                                                                                         128/185 
+  Cleanup    : mailx-12.4-8.el6_6.x86_64                                                                                                       129/185 
+  Cleanup    : ghostscript-8.70-23.el6_9.2.x86_64                                                                                              130/185 
+  Cleanup    : subscription-manager-1.20.10-7.el6.x86_64                                                                                       131/185 
+  Cleanup    : subscription-manager-rhsm-1.20.10-7.el6.x86_64                                                                                  132/185 
+  Cleanup    : samba-client-3.6.23-51.el6.x86_64                                                                                               133/185 
+  Cleanup    : ntp-4.2.6p5-12.el6_9.2.x86_64                                                                                                   134/185 
+  Cleanup    : ntpdate-4.2.6p5-12.el6_9.2.x86_64                                                                                               135/185 
+  Cleanup    : libX11-1.6.4-3.el6.x86_64                                                                                                       136/185 
+  Cleanup    : 32:bind-libs-9.8.2-0.68.rc1.el6.x86_64                                                                                          137/185 
+  Cleanup    : poppler-0.12.4-12.el6_9.x86_64                                                                                                  138/185 
+  Cleanup    : gnupg2-2.0.14-8.el6.x86_64                                                                                                      139/185 
+  Cleanup    : libcurl-7.19.7-53.el6_9.x86_64                                                                                                  140/185 
+  Cleanup    : nss-sysinit-3.36.0-8.el6.x86_64                                                                                                 141/185 
+  Cleanup    : nss-3.36.0-8.el6.x86_64                                                                                                         142/185 
+  Cleanup    : nss-softokn-3.14.3-23.3.el6_8.x86_64                                                                                            143/185 
+  Cleanup    : nss-util-3.36.0-1.el6.x86_64                                                                                                    144/185 
+  Cleanup    : libssh2-1.4.2-2.el6_7.1.x86_64                                                                                                  145/185 
+  Cleanup    : libgudev1-147-2.73.el6_8.2.x86_64                                                                                               146/185 
+  Cleanup    : polkit-0.96-11.el6.x86_64                                                                                                       147/185 
+  Cleanup    : 1:dbus-1.2.24-9.el6.x86_64                                                                                                      148/185 
+  Cleanup    : samba-common-3.6.23-51.el6.x86_64                                                                                               149/185 
+  Cleanup    : samba-winbind-clients-3.6.23-51.el6.x86_64                                                                                      150/185 
+  Cleanup    : samba-winbind-3.6.23-51.el6.x86_64                                                                                              151/185 
+  Cleanup    : udev-147-2.73.el6_8.2.x86_64                                                                                                    152/185 
+  Cleanup    : 12:dhclient-4.1.1-60.P1.el6.x86_64                                                                                              153/185 
+  Cleanup    : sudo-1.8.6p3-29.el6_9.x86_64                                                                                                    154/185 
+  Cleanup    : 2:vim-enhanced-7.4.629-5.el6_8.1.x86_64                                                                                         155/185 
+  Cleanup    : 2:vim-common-7.4.629-5.el6_8.1.x86_64                                                                                           156/185 
+  Cleanup    : 1:nfs-utils-1.2.3-78.el6.x86_64                                                                                                 157/185 
+  Cleanup    : python-libs-2.6.6-66.el6_8.x86_64                                                                                               158/185 
+  Cleanup    : python-2.6.6-66.el6_8.x86_64                                                                                                    159/185 
+  Cleanup    : openssl-1.0.1e-57.el6.x86_64                                                                                                    160/185 
+  Cleanup    : 1:autofs-5.0.5-139.el6.x86_64                                                                                                   161/185 
+  Cleanup    : procps-3.2.8-45.el6_9.1.x86_64                                                                                                  162/185 
+  Cleanup    : 2:vim-minimal-7.4.629-5.el6_8.1.x86_64                                                                                          163/185 
+  Cleanup    : 1:dbus-libs-1.2.24-9.el6.x86_64                                                                                                 164/185 
+  Cleanup    : libudev-147-2.73.el6_8.2.x86_64                                                                                                 165/185 
+  Cleanup    : nspr-4.19.0-1.el6.x86_64                                                                                                        166/185 
+  Cleanup    : freetype-2.3.11-17.el6.x86_64                                                                                                   167/185 
+  Cleanup    : 1:cups-libs-1.4.2-79.el6.x86_64                                                                                                 168/185 
+  Cleanup    : libcgroup-0.40.rc1-26.el6.x86_64                                                                                                169/185 
+  Cleanup    : kpartx-0.4.9-106.el6.x86_64                                                                                                     170/185 
+  Cleanup    : binutils-2.20.51.0.2-5.48.el6.x86_64                                                                                            171/185 
+  Cleanup    : adcli-0.8.1-2.el6.x86_64                                                                                                        172/185 
+  Cleanup    : 1:microcode_ctl-1.17-32.el6.x86_64                                                                                              173/185 
+  Cleanup    : ca-certificates-2018.2.22-65.1.el6.noarch                                                                                       174/185 
+  Cleanup    : 2:vim-filesystem-7.4.629-5.el6_8.1.x86_64                                                                                       175/185 
+  Cleanup    : 12:dhcp-common-4.1.1-60.P1.el6.x86_64                                                                                           176/185 
+  Cleanup    : libX11-common-1.6.4-3.el6.noarch                                                                                                177/185 
+  Cleanup    : subscription-manager-rhsm-certificates-1.20.10-7.el6.x86_64                                                                     178/185 
+  Cleanup    : tzdata-java-2018e-3.el6.noarch                                                                                                  179/185 
+  Cleanup    : glibc-common-2.12-1.212.el6.x86_64                                                                                              180/185 
+  Cleanup    : nss-softokn-freebl-3.14.3-23.3.el6_8.x86_64                                                                                     181/185 
+  Cleanup    : glibc-2.12-1.212.el6.x86_64                                                                                                     182/185 
+  Cleanup    : tzdata-2018e-3.el6.noarch                                                                                                       183/185 
+  Verifying  : libssh2-1.4.2-3.el6_10.1.x86_64                                                                                                   1/185 
+  Verifying  : python-sssdconfig-1.13.3-60.el6_10.2.noarch                                                                                       2/185 
+  Verifying  : python-paramiko-1.7.5-5.el6_10.noarch                                                                                             3/185 
+  Verifying  : perf-2.6.32-754.35.1.el6.x86_64                                                                                                   4/185 
+  Verifying  : ql2500-firmware-7.03.00-1.el6_5.noarch                                                                                            5/185 
+  Verifying  : sssd-ipa-1.13.3-60.el6_10.2.x86_64                                                                                                6/185 
+  Verifying  : python-2.6.6-68.el6_10.x86_64                                                                                                     7/185 
+  Verifying  : tzdata-2020d-1.el6.noarch                                                                                                         8/185 
+  Verifying  : libsss_idmap-1.13.3-60.el6_10.2.x86_64                                                                                            9/185 
+  Verifying  : tzdata-java-2020d-1.el6.noarch                                                                                                   10/185 
+  Verifying  : 1:autofs-5.0.5-140.el6_10.1.x86_64                                                                                               11/185 
+  Verifying  : libcgroup-0.40.rc1-27.el6_10.x86_64                                                                                              12/185 
+  Verifying  : 1:nfs-utils-1.2.3-78.el6_10.2.x86_64                                                                                             13/185 
+  Verifying  : openssl-1.0.1e-58.el6_10.x86_64                                                                                                  14/185 
+  Verifying  : kernel-2.6.32-754.35.1.el6.x86_64                                                                                                15/185 
+  Verifying  : sssd-krb5-common-1.13.3-60.el6_10.2.x86_64                                                                                       16/185 
+  Verifying  : 2:vim-enhanced-7.4.629-5.el6_10.2.x86_64                                                                                         17/185 
+  Verifying  : openssh-5.3p1-124.el6_10.x86_64                                                                                                  18/185 
+  Verifying  : samba-winbind-3.6.23-53.el6_10.x86_64                                                                                            19/185 
+  Verifying  : 2:microcode_ctl-1.17-33.31.el6_10.x86_64                                                                                         20/185 
+  Verifying  : sssd-krb5-1.13.3-60.el6_10.2.x86_64                                                                                              21/185 
+  Verifying  : yum-plugin-security-1.1.30-42.el6_10.noarch                                                                                      22/185 
+  Verifying  : ntp-4.2.6p5-15.el6_10.x86_64                                                                                                     23/185 
+  Verifying  : samba-client-3.6.23-53.el6_10.x86_64                                                                                             24/185 
+  Verifying  : ql2400-firmware-7.03.00-1.el6_5.noarch                                                                                           25/185 
+  Verifying  : 1:cups-1.4.2-81.el6_10.x86_64                                                                                                    26/185 
+  Verifying  : curl-7.19.7-54.el6_10.x86_64                                                                                                     27/185 
+  Verifying  : subscription-manager-1.20.10-8.el6.x86_64                                                                                        28/185 
+  Verifying  : 1:dbus-1.2.24-11.el6_10.x86_64                                                                                                   29/185 
+  Verifying  : 2:vim-filesystem-7.4.629-5.el6_10.2.x86_64                                                                                       30/185 
+  Verifying  : glibc-devel-2.12-1.212.el6_10.3.x86_64                                                                                           31/185 
+  Verifying  : ntpdate-4.2.6p5-15.el6_10.x86_64                                                                                                 32/185 
+  Verifying  : kernel-headers-2.6.32-754.35.1.el6.x86_64                                                                                        33/185 
+  Verifying  : glibc-headers-2.12-1.212.el6_10.3.x86_64                                                                                         34/185 
+  Verifying  : openssh-clients-5.3p1-124.el6_10.x86_64                                                                                          35/185 
+  Verifying  : sssd-common-1.13.3-60.el6_10.2.x86_64                                                                                            36/185 
+  Verifying  : 32:bind-utils-9.8.2-0.68.rc1.el6_10.8.x86_64                                                                                     37/185 
+  Verifying  : sssd-common-pac-1.13.3-60.el6_10.2.x86_64                                                                                        38/185 
+  Verifying  : samba-common-3.6.23-53.el6_10.x86_64                                                                                             39/185 
+  Verifying  : python-libipa_hbac-1.13.3-60.el6_10.2.x86_64                                                                                     40/185 
+  Verifying  : nss-softokn-freebl-3.44.0-6.el6_10.x86_64                                                                                        41/185 
+  Verifying  : adcli-0.8.1-3.el6_10.x86_64                                                                                                      42/185 
+  Verifying  : subscription-manager-rhsm-1.20.10-8.el6.x86_64                                                                                   43/185 
+  Verifying  : libX11-common-1.6.4-4.el6_10.noarch                                                                                              44/185 
+  Verifying  : subscription-manager-rhsm-certificates-1.20.10-8.el6.x86_64                                                                      45/185 
+  Verifying  : sudo-1.8.6p3-29.el6_10.3.x86_64                                                                                                  46/185 
+  Verifying  : poppler-0.12.4-12.el6_10.1.x86_64                                                                                                47/185 
+  Verifying  : sssd-1.13.3-60.el6_10.2.x86_64                                                                                                   48/185 
+  Verifying  : sssd-proxy-1.13.3-60.el6_10.2.x86_64                                                                                             49/185 
+  Verifying  : libipa_hbac-1.13.3-60.el6_10.2.x86_64                                                                                            50/185 
+  Verifying  : nss-3.44.0-7.el6_10.x86_64                                                                                                       51/185 
+  Verifying  : 2:vim-common-7.4.629-5.el6_10.2.x86_64                                                                                           52/185 
+  Verifying  : freetype-2.3.11-19.el6_10.x86_64                                                                                                 53/185 
+  Verifying  : sssd-client-1.13.3-60.el6_10.2.x86_64                                                                                            54/185 
+  Verifying  : kernel-firmware-2.6.32-754.35.1.el6.noarch                                                                                       55/185 
+  Verifying  : 12:dhcp-common-4.1.1-63.P1.el6_10.x86_64                                                                                         56/185 
+  Verifying  : procps-3.2.8-45.el6_9.3.x86_64                                                                                                   57/185 
+  Verifying  : 32:bind-libs-9.8.2-0.68.rc1.el6_10.8.x86_64                                                                                      58/185 
+  Verifying  : sssd-ad-1.13.3-60.el6_10.2.x86_64                                                                                                59/185 
+  Verifying  : sos-3.2-63.el6_10.4.noarch                                                                                                       60/185 
+  Verifying  : 2:vim-minimal-7.4.629-5.el6_10.2.x86_64                                                                                          61/185 
+  Verifying  : udev-147-2.74.el6_10.x86_64                                                                                                      62/185 
+  Verifying  : binutils-2.20.51.0.2-5.48.el6_10.1.x86_64                                                                                        63/185 
+  Verifying  : nss-softokn-3.44.0-6.el6_10.x86_64                                                                                               64/185 
+  Verifying  : poppler-utils-0.12.4-12.el6_10.1.x86_64                                                                                          65/185 
+  Verifying  : glibc-2.12-1.212.el6_10.3.x86_64                                                                                                 66/185 
+  Verifying  : nss-tools-3.44.0-7.el6_10.x86_64                                                                                                 67/185 
+  Verifying  : glibc-common-2.12-1.212.el6_10.3.x86_64                                                                                          68/185 
+  Verifying  : libudev-147-2.74.el6_10.x86_64                                                                                                   69/185 
+  Verifying  : samba-winbind-clients-3.6.23-53.el6_10.x86_64                                                                                    70/185 
+  Verifying  : libcurl-7.19.7-54.el6_10.x86_64                                                                                                  71/185 
+  Verifying  : insights-client-3.0.14-4.el6_10.noarch                                                                                           72/185 
+  Verifying  : python-sss-murmur-1.13.3-60.el6_10.2.x86_64                                                                                      73/185 
+  Verifying  : ca-certificates-2020.2.41-65.1.el6_10.noarch                                                                                     74/185 
+  Verifying  : 12:dhclient-4.1.1-63.P1.el6_10.x86_64                                                                                            75/185 
+  Verifying  : python-libs-2.6.6-68.el6_10.x86_64                                                                                               76/185 
+  Verifying  : ghostscript-8.70-24.el6_10.2.x86_64                                                                                              77/185 
+  Verifying  : kpartx-0.4.9-106.el6_10.1.x86_64                                                                                                 78/185 
+  Verifying  : 1:dbus-libs-1.2.24-11.el6_10.x86_64                                                                                              79/185 
+  Verifying  : nspr-4.21.0-1.el6_10.x86_64                                                                                                      80/185 
+  Verifying  : sssd-ldap-1.13.3-60.el6_10.2.x86_64                                                                                              81/185 
+  Verifying  : gnupg2-2.0.14-9.el6_10.x86_64                                                                                                    82/185 
+  Verifying  : polkit-0.96-11.el6_10.1.x86_64                                                                                                   83/185 
+  Verifying  : yum-utils-1.1.30-42.el6_10.noarch                                                                                                84/185 
+  Verifying  : mailx-12.4-10.el6_10.x86_64                                                                                                      85/185 
+  Verifying  : openssh-server-5.3p1-124.el6_10.x86_64                                                                                           86/185 
+  Verifying  : 1:cups-libs-1.4.2-81.el6_10.x86_64                                                                                               87/185 
+  Verifying  : redhat-release-server-6Server-6.10.0.13.el6_10.8.x86_64                                                                          88/185 
+  Verifying  : libgudev1-147-2.74.el6_10.x86_64                                                                                                 89/185 
+  Verifying  : nss-sysinit-3.44.0-7.el6_10.x86_64                                                                                               90/185 
+  Verifying  : libX11-1.6.4-4.el6_10.x86_64                                                                                                     91/185 
+  Verifying  : nss-util-3.44.0-1.el6_10.x86_64                                                                                                  92/185 
+  Verifying  : sssd-proxy-1.13.3-60.el6.x86_64                                                                                                  93/185 
+  Verifying  : 1:microcode_ctl-1.17-32.el6.x86_64                                                                                               94/185 
+  Verifying  : glibc-headers-2.12-1.212.el6.x86_64                                                                                              95/185 
+  Verifying  : 1:nfs-utils-1.2.3-78.el6.x86_64                                                                                                  96/185 
+  Verifying  : ql2400-firmware-7.03.00-1.el6.noarch                                                                                             97/185 
+  Verifying  : kpartx-0.4.9-106.el6.x86_64                                                                                                      98/185 
+  Verifying  : subscription-manager-rhsm-1.20.10-7.el6.x86_64                                                                                   99/185 
+  Verifying  : libipa_hbac-1.13.3-60.el6.x86_64                                                                                                100/185 
+  Verifying  : 1:cups-1.4.2-79.el6.x86_64                                                                                                      101/185 
+  Verifying  : tzdata-2018e-3.el6.noarch                                                                                                       102/185 
+  Verifying  : sssd-ipa-1.13.3-60.el6.x86_64                                                                                                   103/185 
+  Verifying  : samba-winbind-clients-3.6.23-51.el6.x86_64                                                                                      104/185 
+  Verifying  : libcgroup-0.40.rc1-26.el6.x86_64                                                                                                105/185 
+  Verifying  : ntpdate-4.2.6p5-12.el6_9.2.x86_64                                                                                               106/185 
+  Verifying  : 1:dbus-1.2.24-9.el6.x86_64                                                                                                      107/185 
+  Verifying  : libssh2-1.4.2-2.el6_7.1.x86_64                                                                                                  108/185 
+  Verifying  : python-libipa_hbac-1.13.3-60.el6.x86_64                                                                                         109/185 
+  Verifying  : poppler-utils-0.12.4-12.el6_9.x86_64                                                                                            110/185 
+  Verifying  : nss-util-3.36.0-1.el6.x86_64                                                                                                    111/185 
+  Verifying  : ca-certificates-2018.2.22-65.1.el6.noarch                                                                                       112/185 
+  Verifying  : ql2500-firmware-7.03.00-1.el6.noarch                                                                                            113/185 
+  Verifying  : nspr-4.19.0-1.el6.x86_64                                                                                                        114/185 
+  Verifying  : sssd-ldap-1.13.3-60.el6.x86_64                                                                                                  115/185 
+  Verifying  : tzdata-java-2018e-3.el6.noarch                                                                                                  116/185 
+  Verifying  : libsss_idmap-1.13.3-60.el6.x86_64                                                                                               117/185 
+  Verifying  : nss-softokn-freebl-3.14.3-23.3.el6_8.x86_64                                                                                     118/185 
+  Verifying  : ghostscript-8.70-23.el6_9.2.x86_64                                                                                              119/185 
+  Verifying  : sssd-1.13.3-60.el6.x86_64                                                                                                       120/185 
+  Verifying  : python-2.6.6-66.el6_8.x86_64                                                                                                    121/185 
+  Verifying  : freetype-2.3.11-17.el6.x86_64                                                                                                   122/185 
+  Verifying  : python-sssdconfig-1.13.3-60.el6.noarch                                                                                          123/185 
+  Verifying  : subscription-manager-1.20.10-7.el6.x86_64                                                                                       124/185 
+  Verifying  : procps-3.2.8-45.el6_9.1.x86_64                                                                                                  125/185 
+  Verifying  : ntp-4.2.6p5-12.el6_9.2.x86_64                                                                                                   126/185 
+  Verifying  : glibc-devel-2.12-1.212.el6.x86_64                                                                                               127/185 
+  Verifying  : glibc-common-2.12-1.212.el6.x86_64                                                                                              128/185 
+  Verifying  : sssd-krb5-1.13.3-60.el6.x86_64                                                                                                  129/185 
+  Verifying  : redhat-release-server-6Server-6.10.0.12.el6.x86_64                                                                              130/185 
+  Verifying  : libX11-1.6.4-3.el6.x86_64                                                                                                       131/185 
+  Verifying  : yum-plugin-security-1.1.30-41.el6.noarch                                                                                        132/185 
+  Verifying  : 12:dhcp-common-4.1.1-60.P1.el6.x86_64                                                                                           133/185 
+  Verifying  : libcurl-7.19.7-53.el6_9.x86_64                                                                                                  134/185 
+  Verifying  : 1:cups-libs-1.4.2-79.el6.x86_64                                                                                                 135/185 
+  Verifying  : nss-tools-3.36.0-8.el6.x86_64                                                                                                   136/185 
+  Verifying  : perf-2.6.32-754.el6.x86_64                                                                                                      137/185 
+  Verifying  : 1:autofs-5.0.5-139.el6.x86_64                                                                                                   138/185 
+  Verifying  : gnupg2-2.0.14-8.el6.x86_64                                                                                                      139/185 
+  Verifying  : kernel-firmware-2.6.32-754.el6.noarch                                                                                           140/185 
+  Verifying  : insights-client-3.0.3-3.el6.noarch                                                                                              141/185 
+  Verifying  : openssh-server-5.3p1-123.el6_9.x86_64                                                                                           142/185 
+  Verifying  : 12:dhclient-4.1.1-60.P1.el6.x86_64                                                                                              143/185 
+  Verifying  : 2:vim-common-7.4.629-5.el6_8.1.x86_64                                                                                           144/185 
+  Verifying  : udev-147-2.73.el6_8.2.x86_64                                                                                                    145/185 
+  Verifying  : adcli-0.8.1-2.el6.x86_64                                                                                                        146/185 
+  Verifying  : polkit-0.96-11.el6.x86_64                                                                                                       147/185 
+  Verifying  : 32:bind-utils-9.8.2-0.68.rc1.el6.x86_64                                                                                         148/185 
+  Verifying  : 32:bind-libs-9.8.2-0.68.rc1.el6.x86_64                                                                                          149/185 
+  Verifying  : binutils-2.20.51.0.2-5.48.el6.x86_64                                                                                            150/185 
+  Verifying  : curl-7.19.7-53.el6_9.x86_64                                                                                                     151/185 
+  Verifying  : libX11-common-1.6.4-3.el6.noarch                                                                                                152/185 
+  Verifying  : 2:vim-minimal-7.4.629-5.el6_8.1.x86_64                                                                                          153/185 
+  Verifying  : python-libs-2.6.6-66.el6_8.x86_64                                                                                               154/185 
+  Verifying  : poppler-0.12.4-12.el6_9.x86_64                                                                                                  155/185 
+  Verifying  : samba-client-3.6.23-51.el6.x86_64                                                                                               156/185 
+  Verifying  : glibc-2.12-1.212.el6.x86_64                                                                                                     157/185 
+  Verifying  : sssd-common-pac-1.13.3-60.el6.x86_64                                                                                            158/185 
+  Verifying  : kernel-headers-2.6.32-754.el6.x86_64                                                                                            159/185 
+  Verifying  : sudo-1.8.6p3-29.el6_9.x86_64                                                                                                    160/185 
+  Verifying  : 1:java-1.7.0-openjdk-1.7.0.261-2.6.22.1.el6_10.x86_64                                                                           161/185 
+  Verifying  : python-sss-murmur-1.13.3-60.el6.x86_64                                                                                          162/185 
+  Verifying  : openssl-1.0.1e-57.el6.x86_64                                                                                                    163/185 
+  Verifying  : samba-common-3.6.23-51.el6.x86_64                                                                                               164/185 
+  Verifying  : openssh-clients-5.3p1-123.el6_9.x86_64                                                                                          165/185 
+  Verifying  : 2:vim-filesystem-7.4.629-5.el6_8.1.x86_64                                                                                       166/185 
+  Verifying  : libgudev1-147-2.73.el6_8.2.x86_64                                                                                               167/185 
+1:java-1.7.0-openjdk-1.7.0.181-2.6.14.10.el6.x86_64 was supposed to be removed but is not!
+  Verifying  : 1:java-1.7.0-openjdk-1.7.0.181-2.6.14.10.el6.x86_64                                                                             168/185 
+  Verifying  : sssd-common-1.13.3-60.el6.x86_64                                                                                                169/185 
+  Verifying  : sssd-krb5-common-1.13.3-60.el6.x86_64                                                                                           170/185 
+  Verifying  : sssd-client-1.13.3-60.el6.x86_64                                                                                                171/185 
+  Verifying  : nss-softokn-3.14.3-23.3.el6_8.x86_64                                                                                            172/185 
+  Verifying  : subscription-manager-rhsm-certificates-1.20.10-7.el6.x86_64                                                                     173/185 
+  Verifying  : samba-winbind-3.6.23-51.el6.x86_64                                                                                              174/185 
+  Verifying  : nss-3.36.0-8.el6.x86_64                                                                                                         175/185 
+  Verifying  : openssh-5.3p1-123.el6_9.x86_64                                                                                                  176/185 
+  Verifying  : libudev-147-2.73.el6_8.2.x86_64                                                                                                 177/185 
+  Verifying  : nss-sysinit-3.36.0-8.el6.x86_64                                                                                                 178/185 
+  Verifying  : 2:vim-enhanced-7.4.629-5.el6_8.1.x86_64                                                                                         179/185 
+  Verifying  : sos-3.2-63.el6.noarch                                                                                                           180/185 
+  Verifying  : mailx-12.4-8.el6_6.x86_64                                                                                                       181/185 
+  Verifying  : python-paramiko-1.7.5-4.el6_9.noarch                                                                                            182/185 
+  Verifying  : yum-utils-1.1.30-41.el6.noarch                                                                                                  183/185 
+  Verifying  : sssd-ad-1.13.3-60.el6.x86_64                                                                                                    184/185 
+  Verifying  : 1:dbus-libs-1.2.24-9.el6.x86_64                                                                                                 185/185 
+
+Installed:
+  kernel.x86_64 0:2.6.32-754.35.1.el6                                                                                                                  
+
+Updated:
+  adcli.x86_64 0:0.8.1-3.el6_10                                                    autofs.x86_64 1:5.0.5-140.el6_10.1                                 
+  bind-libs.x86_64 32:9.8.2-0.68.rc1.el6_10.8                                      bind-utils.x86_64 32:9.8.2-0.68.rc1.el6_10.8                       
+  binutils.x86_64 0:2.20.51.0.2-5.48.el6_10.1                                      ca-certificates.noarch 0:2020.2.41-65.1.el6_10                     
+  cups.x86_64 1:1.4.2-81.el6_10                                                    cups-libs.x86_64 1:1.4.2-81.el6_10                                 
+  curl.x86_64 0:7.19.7-54.el6_10                                                   dbus.x86_64 1:1.2.24-11.el6_10                                     
+  dbus-libs.x86_64 1:1.2.24-11.el6_10                                              dhclient.x86_64 12:4.1.1-63.P1.el6_10                              
+  dhcp-common.x86_64 12:4.1.1-63.P1.el6_10                                         freetype.x86_64 0:2.3.11-19.el6_10                                 
+  ghostscript.x86_64 0:8.70-24.el6_10.2                                            glibc.x86_64 0:2.12-1.212.el6_10.3                                 
+  glibc-common.x86_64 0:2.12-1.212.el6_10.3                                        glibc-devel.x86_64 0:2.12-1.212.el6_10.3                           
+  glibc-headers.x86_64 0:2.12-1.212.el6_10.3                                       gnupg2.x86_64 0:2.0.14-9.el6_10                                    
+  insights-client.noarch 0:3.0.14-4.el6_10                                         kernel-firmware.noarch 0:2.6.32-754.35.1.el6                       
+  kernel-headers.x86_64 0:2.6.32-754.35.1.el6                                      kpartx.x86_64 0:0.4.9-106.el6_10.1                                 
+  libX11.x86_64 0:1.6.4-4.el6_10                                                   libX11-common.noarch 0:1.6.4-4.el6_10                              
+  libcgroup.x86_64 0:0.40.rc1-27.el6_10                                            libcurl.x86_64 0:7.19.7-54.el6_10                                  
+  libgudev1.x86_64 0:147-2.74.el6_10                                               libipa_hbac.x86_64 0:1.13.3-60.el6_10.2                            
+  libssh2.x86_64 0:1.4.2-3.el6_10.1                                                libsss_idmap.x86_64 0:1.13.3-60.el6_10.2                           
+  libudev.x86_64 0:147-2.74.el6_10                                                 mailx.x86_64 0:12.4-10.el6_10                                      
+  microcode_ctl.x86_64 2:1.17-33.31.el6_10                                         nfs-utils.x86_64 1:1.2.3-78.el6_10.2                               
+  nspr.x86_64 0:4.21.0-1.el6_10                                                    nss.x86_64 0:3.44.0-7.el6_10                                       
+  nss-softokn.x86_64 0:3.44.0-6.el6_10                                             nss-softokn-freebl.x86_64 0:3.44.0-6.el6_10                        
+  nss-sysinit.x86_64 0:3.44.0-7.el6_10                                             nss-tools.x86_64 0:3.44.0-7.el6_10                                 
+  nss-util.x86_64 0:3.44.0-1.el6_10                                                ntp.x86_64 0:4.2.6p5-15.el6_10                                     
+  ntpdate.x86_64 0:4.2.6p5-15.el6_10                                               openssh.x86_64 0:5.3p1-124.el6_10                                  
+  openssh-clients.x86_64 0:5.3p1-124.el6_10                                        openssh-server.x86_64 0:5.3p1-124.el6_10                           
+  openssl.x86_64 0:1.0.1e-58.el6_10                                                perf.x86_64 0:2.6.32-754.35.1.el6                                  
+  polkit.x86_64 0:0.96-11.el6_10.1                                                 poppler.x86_64 0:0.12.4-12.el6_10.1                                
+  poppler-utils.x86_64 0:0.12.4-12.el6_10.1                                        procps.x86_64 0:3.2.8-45.el6_9.3                                   
+  python.x86_64 0:2.6.6-68.el6_10                                                  python-libipa_hbac.x86_64 0:1.13.3-60.el6_10.2                     
+  python-libs.x86_64 0:2.6.6-68.el6_10                                             python-paramiko.noarch 0:1.7.5-5.el6_10                            
+  python-sss-murmur.x86_64 0:1.13.3-60.el6_10.2                                    python-sssdconfig.noarch 0:1.13.3-60.el6_10.2                      
+  ql2400-firmware.noarch 0:7.03.00-1.el6_5                                         ql2500-firmware.noarch 0:7.03.00-1.el6_5                           
+  redhat-release-server.x86_64 0:6Server-6.10.0.13.el6_10.8                        samba-client.x86_64 0:3.6.23-53.el6_10                             
+  samba-common.x86_64 0:3.6.23-53.el6_10                                           samba-winbind.x86_64 0:3.6.23-53.el6_10                            
+  samba-winbind-clients.x86_64 0:3.6.23-53.el6_10                                  sos.noarch 0:3.2-63.el6_10.4                                       
+  sssd.x86_64 0:1.13.3-60.el6_10.2                                                 sssd-ad.x86_64 0:1.13.3-60.el6_10.2                                
+  sssd-client.x86_64 0:1.13.3-60.el6_10.2                                          sssd-common.x86_64 0:1.13.3-60.el6_10.2                            
+  sssd-common-pac.x86_64 0:1.13.3-60.el6_10.2                                      sssd-ipa.x86_64 0:1.13.3-60.el6_10.2                               
+  sssd-krb5.x86_64 0:1.13.3-60.el6_10.2                                            sssd-krb5-common.x86_64 0:1.13.3-60.el6_10.2                       
+  sssd-ldap.x86_64 0:1.13.3-60.el6_10.2                                            sssd-proxy.x86_64 0:1.13.3-60.el6_10.2                             
+  subscription-manager.x86_64 0:1.20.10-8.el6                                      subscription-manager-rhsm.x86_64 0:1.20.10-8.el6                   
+  subscription-manager-rhsm-certificates.x86_64 0:1.20.10-8.el6                    sudo.x86_64 0:1.8.6p3-29.el6_10.3                                  
+  tzdata.noarch 0:2020d-1.el6                                                      tzdata-java.noarch 0:2020d-1.el6                                   
+  udev.x86_64 0:147-2.74.el6_10                                                    vim-common.x86_64 2:7.4.629-5.el6_10.2                             
+  vim-enhanced.x86_64 2:7.4.629-5.el6_10.2                                         vim-filesystem.x86_64 2:7.4.629-5.el6_10.2                         
+  vim-minimal.x86_64 2:7.4.629-5.el6_10.2                                          yum-plugin-security.noarch 0:1.1.30-42.el6_10                      
+  yum-utils.noarch 0:1.1.30-42.el6_10                                             
+
+Failed:
+  java-1.7.0-openjdk.x86_64 1:1.7.0.181-2.6.14.10.el6                       java-1.7.0-openjdk.x86_64 1:1.7.0.261-2.6.22.1.el6_10                      
+
+Complete!
+[root@localhost ~]# subscription-manager repos --enable rhel-6-server-extras-rpms
+^Z
+[1]+  Stopped                 subscription-manager repos --enable rhel-6-server-extras-rpms
+[root@localhost ~]# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-lv_root
+                      6.5G  2.5G  3.7G  40% /
+tmpfs                 2.2G     0  2.2G   0% /dev/shm
+/dev/sda1             477M   72M  381M  16% /boot
+[root@localhost ~]# subsription-manager clean
+-bash: subsription-manager: command not found
+[root@localhost ~]# subscription-manager clean
+All local data removed
+[root@localhost ~]# subscription-manager subscription-manager repos --enable rhel-6-server-extras-rpms
+Usage: subscription-manager MODULE-NAME [MODULE-OPTIONS] [--help]
+
+Primary Modules: 
+
+  attach         Attach a specified subscription to the registered system
+  list           List subscription and product information for this system
+  refresh        Pull the latest subscription data from the server
+  register       Register this system to the Customer Portal or another subscription management service
+  release        Configure which operating system release to use
+  remove         Remove all or specific subscriptions from this system
+  status         Show status information for this system's subscriptions and products
+  unregister     Unregister this system from the Customer Portal or another subscription management service
+
+Other Modules:   
+
+  auto-attach    Set if subscriptions are attached on a schedule (default of daily)
+  clean          Remove all local system and subscription data without affecting the server
+  config         List, set, or remove the configuration parameters in use by this system
+  environments   Display the environments available for a user
+  facts          View or update the detected system information
+  identity       Display the identity certificate for this system or request a new one
+  import         Import certificates which were provided outside of the tool
+  orgs           Display the organizations against which a user can register a system
+  plugins        View and configure with 'subscription-manager plugins'
+  redeem         Attempt to redeem a subscription for a preconfigured system
+  repo-override  Manage custom content repository settings
+  repos          List the repositories which this system is entitled to use
+  service-level  Manage service levels for this system
+  subscribe      Deprecated, see attach
+  unsubscribe    Deprecated, see remove
+  version        Print version information
+
+[root@localhost ~]# subscription-manager repos --enable rhel-6-server-extras-rpms
+Error: 'rhel-6-server-extras-rpms' does not match a valid repository ID. Use "subscription-manager repos --list" to see valid repositories.
+[root@localhost ~]# subscription-manager repos --list
+This system has no repositories available through subscriptions.
+[root@localhost ~]# subscription-manager unregister
+This system is currently not registered.
+[root@localhost ~]# subscription-manager register
+Registering to: subscription.rhsm.redhat.com:443/subscription
+Username: rdodia
+Password: 
+The system has been registered with ID: 32eda023-9386-472b-9b4b-39d76bd55275
+The registered system name is: localhost.localdomain
+Error updating system data on the server, see /var/log/rhsm/rhsm.log for more details.
+[root@localhost ~]# subscription-manager list --available
+Error updating system data on the server, see /var/log/rhsm/rhsm.log for more details.
+[root@localhost ~]# cat /etc/re
+readahead.conf          redhat-lsb/             request-key.conf        resolv.conf             
+redhat-access-insights/ redhat-release          request-key.d/          
+[root@localhost ~]# cat /etc/redhat-release 
+Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[root@localhost ~]# vi /var/log/rhsm/rhsm.log
+[root@localhost ~]# subscription-manager unregister
+Unregistering from: subscription.rhsm.redhat.com:443/subscription
+^Z
+[2]+  Stopped                 subscription-manager unregister
+[root@localhost ~]# vi /var/log/rhsm/rhsm.log
+[root@localhost ~]#  subscription-manager remove --all
+0 subscriptions removed from this system.
+[root@localhost ~]# subscription-manager unregister
+This system is currently not registered.
+[root@localhost ~]# subscription-manager clean
+All local data removed
+[root@localhost ~]# yum clean all
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+Cleaning repos: 
+Cleaning up Everything
+[root@localhost ~]# rm -rf /var/cache/yum/*
+[root@localhost ~]# subscription-manager register
+Registering to: subscription.rhsm.redhat.com:443/subscription
+Username: rdodia
+Password: 
+The system has been registered with ID: 3f0a02dc-3eba-48fc-8bd0-3df80ef23748
+The registered system name is: localhost.localdomain
+
+
+
+
+^Z
+[3]+  Stopped                 subscription-manager register
+[root@localhost ~]# subscription-manager register
+This system is already registered. Use --force to override
+[root@localhost ~]# subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
+packet_write_wait: Connection to 192.168.0.103 port 22: Broken pipe
+(base) Rachnas-MacBook-Pro:~ rdodia$ 
+(base) Rachnas-MacBook-Pro:~ rdodia$ 
+(base) Rachnas-MacBook-Pro:~ rdodia$ ssh root@192.168.0.103
+root@192.168.0.103's password: 
+Last login: Mon Nov 30 12:55:30 2020
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[root@localhost ~]# subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
+Successfully attached a subscription for: Red Hat Developer Subscription
+[root@localhost ~]# subscription-manager repos --enable rhel-6-server-extras-rpms
+Repository 'rhel-6-server-extras-rpms' is enabled for this system.
+[root@localhost ~]# yum -y install preupgrade-assistant preupgrade-assistant-el6toel7
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+rhel-6-server-extras-rpms                                                                                                       | 3.2 kB     00:00     
+rhel-6-server-extras-rpms/primary_db                                                                                            |  53 kB     00:00     
+rhel-6-server-rpms                                                                                                              | 3.5 kB     00:00     
+rhel-6-server-rpms/primary_db                                                                                                   |  67 MB     00:41     
+Resolving Dependencies
+--> Running transaction check
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-utils >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: pykickstart for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package preupgrade-assistant-el6toel7.noarch 0:0.8.0-2.el6 will be installed
+--> Processing Dependency: preupgrade-assistant-el6toel7-data for package: preupgrade-assistant-el6toel7-0.8.0-2.el6.noarch
+--> Running transaction check
+---> Package openscap.x86_64 0:1.2.13-2.el6 will be installed
+---> Package openscap-utils.x86_64 0:1.2.13-2.el6 will be installed
+--> Processing Dependency: openscap-scanner(x86-64) = 1.2.13-2.el6 for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpm-build for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpmdevtools for package: openscap-utils-1.2.13-2.el6.x86_64
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package preupgrade-assistant-el6toel7-data.noarch 0:0.20200704-1.el6 will be installed
+---> Package pykickstart.noarch 0:1.74.22-1.el6 will be installed
+--> Running transaction check
+---> Package openscap-scanner.x86_64 0:1.2.13-2.el6 will be installed
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package rpm-build.x86_64 0:4.8.0-59.el6 will be installed
+--> Processing Dependency: system-rpm-config for package: rpm-build-4.8.0-59.el6.x86_64
+---> Package rpmdevtools.noarch 0:7.5-2.el6 will be installed
+--> Running transaction check
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package redhat-rpm-config.noarch 0:9.0.3-51.el6 will be installed
+--> Finished Dependency Resolution
+Error: Package: preupgrade-assistant-2.6.2-1.el6.noarch (rhel-6-server-extras-rpms)
+           Requires: openscap-engine-sce >= 1.0.8
+**********************************************************************
+yum can be configured to try to resolve such errors by temporarily enabling
+disabled repos and searching for missing dependencies.
+To enable this functionality please set 'notify_only=0' in /etc/yum/pluginconf.d/search-disabled-repos.conf
+**********************************************************************
+
+Error: Package: preupgrade-assistant-2.6.2-1.el6.noarch (rhel-6-server-extras-rpms)
+           Requires: openscap-engine-sce >= 1.0.8
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@localhost ~]# yum install preupgrade-assistant
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-utils >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: pykickstart for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Running transaction check
+---> Package openscap.x86_64 0:1.2.13-2.el6 will be installed
+---> Package openscap-utils.x86_64 0:1.2.13-2.el6 will be installed
+--> Processing Dependency: openscap-scanner(x86-64) = 1.2.13-2.el6 for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpm-build for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpmdevtools for package: openscap-utils-1.2.13-2.el6.x86_64
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package pykickstart.noarch 0:1.74.22-1.el6 will be installed
+--> Running transaction check
+---> Package openscap-scanner.x86_64 0:1.2.13-2.el6 will be installed
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package rpm-build.x86_64 0:4.8.0-59.el6 will be installed
+--> Processing Dependency: system-rpm-config for package: rpm-build-4.8.0-59.el6.x86_64
+---> Package rpmdevtools.noarch 0:7.5-2.el6 will be installed
+--> Running transaction check
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+---> Package redhat-rpm-config.noarch 0:9.0.3-51.el6 will be installed
+--> Finished Dependency Resolution
+Error: Package: preupgrade-assistant-2.6.2-1.el6.noarch (rhel-6-server-extras-rpms)
+           Requires: openscap-engine-sce >= 1.0.8
+**********************************************************************
+yum can be configured to try to resolve such errors by temporarily enabling
+disabled repos and searching for missing dependencies.
+To enable this functionality please set 'notify_only=0' in /etc/yum/pluginconf.d/search-disabled-repos.conf
+**********************************************************************
+
+Error: Package: preupgrade-assistant-2.6.2-1.el6.noarch (rhel-6-server-extras-rpms)
+           Requires: openscap-engine-sce >= 1.0.8
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@localhost ~]# subscription-manager repos --enable rhel-6-server-optional-rpms
+Repository 'rhel-6-server-optional-rpms' is enabled for this system.
+[root@localhost ~]# yum install preupgrade-assistant
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+rhel-6-server-extras-rpms                                                                                                       | 3.2 kB     00:00     
+rhel-6-server-optional-rpms                                                                                                     | 3.4 kB     00:00     
+rhel-6-server-optional-rpms/primary_db                                                                                          | 5.5 MB     00:03     
+rhel-6-server-rpms                                                                                                              | 3.5 kB     00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package preupgrade-assistant.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: openscap >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-engine-sce >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: openscap-utils >= 1.0.8 for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Processing Dependency: pykickstart for package: preupgrade-assistant-2.6.2-1.el6.noarch
+--> Running transaction check
+---> Package openscap.x86_64 0:1.2.13-2.el6 will be installed
+---> Package openscap-engine-sce.x86_64 0:1.2.13-2.el6 will be installed
+---> Package openscap-utils.x86_64 0:1.2.13-2.el6 will be installed
+--> Processing Dependency: openscap-scanner(x86-64) = 1.2.13-2.el6 for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpm-build for package: openscap-utils-1.2.13-2.el6.x86_64
+--> Processing Dependency: rpmdevtools for package: openscap-utils-1.2.13-2.el6.x86_64
+---> Package pykickstart.noarch 0:1.74.22-1.el6 will be installed
+--> Running transaction check
+---> Package openscap-scanner.x86_64 0:1.2.13-2.el6 will be installed
+---> Package rpm-build.x86_64 0:4.8.0-59.el6 will be installed
+--> Processing Dependency: system-rpm-config for package: rpm-build-4.8.0-59.el6.x86_64
+---> Package rpmdevtools.noarch 0:7.5-2.el6 will be installed
+--> Running transaction check
+---> Package redhat-rpm-config.noarch 0:9.0.3-51.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================
+ Package                                Arch                     Version                           Repository                                     Size
+=======================================================================================================================================================
+Installing:
+ preupgrade-assistant                   noarch                   2.6.2-1.el6                       rhel-6-server-extras-rpms                     229 k
+Installing for dependencies:
+ openscap                               x86_64                   1.2.13-2.el6                      rhel-6-server-rpms                            3.9 M
+ openscap-engine-sce                    x86_64                   1.2.13-2.el6                      rhel-6-server-optional-rpms                    23 k
+ openscap-scanner                       x86_64                   1.2.13-2.el6                      rhel-6-server-rpms                             48 k
+ openscap-utils                         x86_64                   1.2.13-2.el6                      rhel-6-server-rpms                             24 k
+ pykickstart                            noarch                   1.74.22-1.el6                     rhel-6-server-rpms                            314 k
+ redhat-rpm-config                      noarch                   9.0.3-51.el6                      rhel-6-server-rpms                             60 k
+ rpm-build                              x86_64                   4.8.0-59.el6                      rhel-6-server-rpms                            131 k
+ rpmdevtools                            noarch                   7.5-2.el6                         rhel-6-server-rpms                            109 k
+
+Transaction Summary
+=======================================================================================================================================================
+Install       9 Package(s)
+
+Total download size: 4.8 M
+Installed size: 58 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/9): openscap-1.2.13-2.el6.x86_64.rpm                                                                                         | 3.9 MB     00:02     
+(2/9): openscap-engine-sce-1.2.13-2.el6.x86_64.rpm                                                                              |  23 kB     00:00     
+(3/9): openscap-scanner-1.2.13-2.el6.x86_64.rpm                                                                                 |  48 kB     00:00     
+(4/9): openscap-utils-1.2.13-2.el6.x86_64.rpm                                                                                   |  24 kB     00:00     
+(5/9): preupgrade-assistant-2.6.2-1.el6.noarch.rpm                                                                              | 229 kB     00:00     
+(6/9): pykickstart-1.74.22-1.el6.noarch.rpm                                                                                     | 314 kB     00:00     
+(7/9): redhat-rpm-config-9.0.3-51.el6.noarch.rpm                                                                                |  60 kB     00:00     
+(8/9): rpm-build-4.8.0-59.el6.x86_64.rpm                                                                                        | 131 kB     00:00     
+(9/9): rpmdevtools-7.5-2.el6.noarch.rpm                                                                                         | 109 kB     00:00     
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  508 kB/s | 4.8 MB     00:09     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : openscap-1.2.13-2.el6.x86_64                                                                                                        1/9 
+  Installing : openscap-scanner-1.2.13-2.el6.x86_64                                                                                                2/9 
+  Installing : openscap-engine-sce-1.2.13-2.el6.x86_64                                                                                             3/9 
+  Installing : pykickstart-1.74.22-1.el6.noarch                                                                                                    4/9 
+  Installing : redhat-rpm-config-9.0.3-51.el6.noarch                                                                                               5/9 
+  Installing : rpm-build-4.8.0-59.el6.x86_64                                                                                                       6/9 
+  Installing : rpmdevtools-7.5-2.el6.noarch                                                                                                        7/9 
+  Installing : openscap-utils-1.2.13-2.el6.x86_64                                                                                                  8/9 
+  Installing : preupgrade-assistant-2.6.2-1.el6.noarch                                                                                             9/9 
+rhel-6-server-optional-rpms/productid                                                                                           | 2.1 kB     00:00     
+rhel-6-server-rpms/productid                                                                                                    | 2.1 kB     00:00     
+  Verifying  : openscap-1.2.13-2.el6.x86_64                                                                                                        1/9 
+  Verifying  : preupgrade-assistant-2.6.2-1.el6.noarch                                                                                             2/9 
+  Verifying  : rpm-build-4.8.0-59.el6.x86_64                                                                                                       3/9 
+  Verifying  : redhat-rpm-config-9.0.3-51.el6.noarch                                                                                               4/9 
+  Verifying  : openscap-utils-1.2.13-2.el6.x86_64                                                                                                  5/9 
+  Verifying  : openscap-scanner-1.2.13-2.el6.x86_64                                                                                                6/9 
+  Verifying  : pykickstart-1.74.22-1.el6.noarch                                                                                                    7/9 
+  Verifying  : rpmdevtools-7.5-2.el6.noarch                                                                                                        8/9 
+  Verifying  : openscap-engine-sce-1.2.13-2.el6.x86_64                                                                                             9/9 
+
+Installed:
+  preupgrade-assistant.noarch 0:2.6.2-1.el6                                                                                                            
+
+Dependency Installed:
+  openscap.x86_64 0:1.2.13-2.el6                 openscap-engine-sce.x86_64 0:1.2.13-2.el6           openscap-scanner.x86_64 0:1.2.13-2.el6           
+  openscap-utils.x86_64 0:1.2.13-2.el6           pykickstart.noarch 0:1.74.22-1.el6                  redhat-rpm-config.noarch 0:9.0.3-51.el6          
+  rpm-build.x86_64 0:4.8.0-59.el6                rpmdevtools.noarch 0:7.5-2.el6                     
+
+Complete!
+[root@localhost ~]# yum install preupgrade-assistant-el6toel7
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package preupgrade-assistant-el6toel7.noarch 0:0.8.0-2.el6 will be installed
+--> Processing Dependency: preupgrade-assistant-el6toel7-data for package: preupgrade-assistant-el6toel7-0.8.0-2.el6.noarch
+--> Running transaction check
+---> Package preupgrade-assistant-el6toel7-data.noarch 0:0.20200704-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================
+ Package                                          Arch                 Version                           Repository                               Size
+=======================================================================================================================================================
+Installing:
+ preupgrade-assistant-el6toel7                    noarch               0.8.0-2.el6                       rhel-6-server-extras-rpms               396 k
+Installing for dependencies:
+ preupgrade-assistant-el6toel7-data               noarch               0.20200704-1.el6                  rhel-6-server-extras-rpms               1.5 M
+
+Transaction Summary
+=======================================================================================================================================================
+Install       2 Package(s)
+
+Total download size: 1.9 M
+Installed size: 7.9 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/2): preupgrade-assistant-el6toel7-0.8.0-2.el6.noarch.rpm                                                                     | 396 kB     00:00     
+(2/2): preupgrade-assistant-el6toel7-data-0.20200704-1.el6.noarch.rpm                                                           | 1.5 MB     00:00     
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  913 kB/s | 1.9 MB     00:02     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : preupgrade-assistant-el6toel7-data-0.20200704-1.el6.noarch                                                                          1/2 
+  Installing : preupgrade-assistant-el6toel7-0.8.0-2.el6.noarch                                                                                    2/2 
+  Verifying  : preupgrade-assistant-el6toel7-0.8.0-2.el6.noarch                                                                                    1/2 
+  Verifying  : preupgrade-assistant-el6toel7-data-0.20200704-1.el6.noarch                                                                          2/2 
+
+Installed:
+  preupgrade-assistant-el6toel7.noarch 0:0.8.0-2.el6                                                                                                   
+
+Dependency Installed:
+  preupgrade-assistant-el6toel7-data.noarch 0:0.20200704-1.el6                                                                                         
+
+Complete!
+[root@localhost ~]# yum install preupgrade-assistant-el6toel7-data
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package preupgrade-assistant-el6toel7-data-0.20200704-1.el6.noarch already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install preupgrade-assistant-ui
+\Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package preupgrade-assistant-ui.noarch 0:2.6.2-1.el6 will be installed
+--> Processing Dependency: httpd for package: preupgrade-assistant-ui-2.6.2-1.el6.noarch
+--> Processing Dependency: mod_wsgi for package: preupgrade-assistant-ui-2.6.2-1.el6.noarch
+--> Running transaction check
+---> Package httpd.x86_64 0:2.2.15-69.el6 will be installed
+--> Processing Dependency: httpd-tools = 2.2.15-69.el6 for package: httpd-2.2.15-69.el6.x86_64
+--> Processing Dependency: apr-util-ldap for package: httpd-2.2.15-69.el6.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.2.15-69.el6.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.2.15-69.el6.x86_64
+---> Package mod_wsgi.x86_64 0:3.2-7.el6 will be installed
+--> Running transaction check
+---> Package apr.x86_64 0:1.3.9-5.el6_9.1 will be installed
+---> Package apr-util.x86_64 0:1.3.9-3.el6_0.1 will be installed
+---> Package apr-util-ldap.x86_64 0:1.3.9-3.el6_0.1 will be installed
+---> Package httpd-tools.x86_64 0:2.2.15-69.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================
+ Package                                  Arch                    Version                             Repository                                  Size
+=======================================================================================================================================================
+Installing:
+ preupgrade-assistant-ui                  noarch                  2.6.2-1.el6                         rhel-6-server-extras-rpms                  5.7 M
+Installing for dependencies:
+ apr                                      x86_64                  1.3.9-5.el6_9.1                     rhel-6-server-rpms                         123 k
+ apr-util                                 x86_64                  1.3.9-3.el6_0.1                     rhel-6-server-rpms                          87 k
+ apr-util-ldap                            x86_64                  1.3.9-3.el6_0.1                     rhel-6-server-rpms                          15 k
+ httpd                                    x86_64                  2.2.15-69.el6                       rhel-6-server-rpms                         836 k
+ httpd-tools                              x86_64                  2.2.15-69.el6                       rhel-6-server-rpms                          81 k
+ mod_wsgi                                 x86_64                  3.2-7.el6                           rhel-6-server-rpms                          66 k
+
+Transaction Summary
+=======================================================================================================================================================
+Install       7 Package(s)
+
+Total download size: 6.9 M
+Installed size: 25 M
+Is this ok [y/N]: y
+Is this ok [y/N]: y
+Downloading Packages:
+(1/7): apr-1.3.9-5.el6_9.1.x86_64.rpm                                                                                           | 123 kB     00:00     
+(2/7): apr-util-1.3.9-3.el6_0.1.x86_64.rpm                                                                                      |  87 kB     00:00     
+(3/7): apr-util-ldap-1.3.9-3.el6_0.1.x86_64.rpm                                                                                 |  15 kB     00:00     
+(4/7): httpd-2.2.15-69.el6.x86_64.rpm                                                                                           | 836 kB     00:00     
+(5/7): httpd-tools-2.2.15-69.el6.x86_64.rpm                                                                                     |  81 kB     00:00     
+(6/7): mod_wsgi-3.2-7.el6.x86_64.rpm                                                                                            |  66 kB     00:00     
+(7/7): preupgrade-assistant-ui-2.6.2-1.el6.noarch.rpm                                                                           | 5.7 MB     00:03     
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  836 kB/s | 6.9 MB     00:08     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : apr-1.3.9-5.el6_9.1.x86_64                                                                                                          1/7 
+  Installing : apr-util-1.3.9-3.el6_0.1.x86_64                                                                                                     2/7 
+  Installing : httpd-tools-2.2.15-69.el6.x86_64                                                                                                    3/7 
+  Installing : apr-util-ldap-1.3.9-3.el6_0.1.x86_64                                                                                                4/7 
+  Installing : httpd-2.2.15-69.el6.x86_64                                                                                                          5/7 
+  Installing : mod_wsgi-3.2-7.el6.x86_64                                                                                                           6/7 
+  Installing : preupgrade-assistant-ui-2.6.2-1.el6.noarch                                                                                          7/7 
+  Verifying  : preupgrade-assistant-ui-2.6.2-1.el6.noarch                                                                                          1/7 
+  Verifying  : httpd-tools-2.2.15-69.el6.x86_64                                                                                                    2/7 
+  Verifying  : apr-util-ldap-1.3.9-3.el6_0.1.x86_64                                                                                                3/7 
+  Verifying  : httpd-2.2.15-69.el6.x86_64                                                                                                          4/7 
+  Verifying  : apr-1.3.9-5.el6_9.1.x86_64                                                                                                          5/7 
+  Verifying  : mod_wsgi-3.2-7.el6.x86_64                                                                                                           6/7 
+  Verifying  : apr-util-1.3.9-3.el6_0.1.x86_64                                                                                                     7/7 
+
+Installed:
+  preupgrade-assistant-ui.noarch 0:2.6.2-1.el6                                                                                                         
+
+Dependency Installed:
+  apr.x86_64 0:1.3.9-5.el6_9.1          apr-util.x86_64 0:1.3.9-3.el6_0.1    apr-util-ldap.x86_64 0:1.3.9-3.el6_0.1    httpd.x86_64 0:2.2.15-69.el6   
+  httpd-tools.x86_64 0:2.2.15-69.el6    mod_wsgi.x86_64 0:3.2-7.el6         
+
+Complete!
+[root@localhost ~]# yum install redhat-upgrade-tool
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package redhat-upgrade-tool.noarch 1:0.8.0-9.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================
+ Package                                Arch                      Version                           Repository                                    Size
+=======================================================================================================================================================
+Installing:
+ redhat-upgrade-tool                    noarch                    1:0.8.0-9.el6                     rhel-6-server-extras-rpms                    230 k
+
+Transaction Summary
+=======================================================================================================================================================
+Install       1 Package(s)
+
+Total download size: 230 k
+Installed size: 841 k
+Is this ok [y/N]: y
+Downloading Packages:
+redhat-upgrade-tool-0.8.0-9.el6.noarch.rpm                                                                                      | 230 kB     00:00     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : 1:redhat-upgrade-tool-0.8.0-9.el6.noarch                                                                                            1/1 
+  Verifying  : 1:redhat-upgrade-tool-0.8.0-9.el6.noarch                                                                                            1/1 
+
+Installed:
+  redhat-upgrade-tool.noarch 1:0.8.0-9.el6                                                                                                             
+
+Complete!
+[root@localhost ~]# yum install fakeroot
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package fakeroot-1.12.2-22.2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install fakeroot-libs
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package fakeroot-libs-1.12.2-22.2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install mod_wsgi
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package mod_wsgi-3.2-7.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install openscap
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package openscap-1.2.13-2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install openscap-engine-sce
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package openscap-engine-sce-1.2.13-2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install openscap-engine-sce
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package openscap-engine-sce-1.2.13-2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install openscap-utils
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package openscap-utils-1.2.13-2.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install pykickstart
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package pykickstart-1.74.22-1.el6.noarch already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install redhat-rpm-config
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package redhat-rpm-config-9.0.3-51.el6.noarch already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install rpm-build
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package rpm-build-4.8.0-59.el6.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum install rpmdevtools
+Failed to set locale, defaulting to C
+Loaded plugins: product-id, search-disabled-repos, security, subscription-manager
+Setting up Install Process
+Package rpmdevtools-7.5-2.el6.noarch already installed and latest version
+Nothing to do
+[root@localhost ~]# preupg -v
+The Preupgrade Assistant is a diagnostics tool 
+and does not perform the actual upgrade.
+Do you want to continue? [Y/n]
+Y
+Gathering logs used by the Preupgrade Assistant:
+All installed packages                                 : 01/10 ...finished (time 00:00s)
+All changed files                                      : 02/10 ...finished (time 00:34s)
+Changed config files                                   : 03/10 ...finished (time 00:00s)
+All users                                              : 04/10 ...finished (time 00:00s)
+All groups                                             : 05/10 ...finished (time 00:00s)
+Service statuses                                       : 06/10 ...finished (time 00:00s)
+All installed files                                    : 07/10 ...finished (time 00:00s)
+All local files                                        : 08/10 ...finished (time 00:00s)
+All executable files                                   : 09/10 ...finished (time 00:00s)
+Red Hat signed packages                                : 10/10 ...finished (time 00:00s)
+Assessment of the system, running checks / SCE scripts:
+001/140 ...done    (Configuration files to be reviewed) (time: 00:01s)
+002/140 ...done    (File lists for the manual migration) (time: 00:00s)
+003/140 ...done    (Bacula Backup Software) (time: 00:00s)
+004/140 ...done    (MySQL configuration) (time: 00:00s)
+005/140 ...done    (MySQL data stack) (time: 00:00s)
+006/140 ...done    (Changes related to moving from MySQL to MariaDB) (time: 00:00s)
+007/140 ...done    (PostgreSQL) (time: 00:00s)
+008/140 ...done    (GNOME desktop environment) (time: 00:00s)
+009/140 ...done    (KDE desktop environment) (time: 00:00s)
+010/140 ...done    (POWER6 processors) (time: 00:00s)
+011/140 ...done    (Graphic drivers not supported in Red Hat Enterprise Linux 7) (time: 00:00s)
+012/140 ...done    (Input drivers not supported in Red Hat Enterprise Linux 7) (time: 00:00s)
+013/140 ...done    (Kernel networking drivers not available in Red Hat Enterprise Linux 7) (time: 00:00s)
+014/140 ...done    (Kernel storage drivers not available in Red Hat Enterprise Linux 7) (time: 00:00s)
+015/140 ...done    (Red Hat Directory Server) (time: 00:00s)
+016/140 ...done    (Arptables) (time: 00:00s)
+017/140 ...done    (BIND9 in a chroot environment) (time: 00:00s)
+018/140 ...done    (BIND9 configuration compatibility) (time: 00:00s)
+019/140 ...done    (Moving the 'dhcpd' and 'dhcrelay' arguments) (time: 00:00s)
+020/140 ...done    (Dnsmasq) (time: 00:00s)
+021/140 ...done    (Dovecot) (time: 00:00s)
+022/140 ...done    (Compatibility between iptables and ip6tables) (time: 00:00s)
+023/140 ...done    (Net-SNMP) (time: 00:00s)
+024/140 ...done    (NFSv2) (time: 00:00s)
+025/140 ...done    (OpenLDAP server daemon configuration) (time: 00:00s)
+026/140 ...done    (Moving openssh-keycat) (time: 00:00s)
+027/140 ...done    (SSH configuration file and SSH keys) (time: 00:00s)
+028/140 ...done    (Postfix) (time: 00:00s)
+029/140 ...done    (SMB) (time: 00:00s)
+030/140 ...done    (Sendmail) (time: 00:00s)
+031/140 ...done    (Squid) (time: 00:00s)
+032/140 ...done    (VSFTP daemon configuration) (time: 00:00s)
+033/140 ...done    (Reusable configuration files) (time: 00:00s)
+034/140 ...done    (Changed configuration files) (time: 00:00s)
+035/140 ...done    (Rsyslog configuration incompatibility) (time: 00:00s)
+036/140 ...done    (VCS repositories) (time: 00:00s)
+037/140 ...done    (Added and extended options for BIND9) (time: 00:00s)
+038/140 ...done    (Added options in dnsmasq) (time: 00:00s)
+039/140 ...done    (Changes in utilities) (time: 00:00s)
+040/140 ...done    (Load balancer support) (time: 00:02s)
+041/140 ...done    (Packages not signed by Red Hat) (time: 00:01s)
+042/140 ...done    (Obsolete RPM packages) (time: 00:02s)
+043/140 ...done    (w3m browser) (time: 00:00s)
+044/140 ...done    (The qemu-guest-agent package) (time: 00:00s)
+045/140 ...done    (The coreutils packages) (time: 00:00s)
+046/140 ...done    (The gawk package) (time: 00:00s)
+047/140 ...done    (Removed command line options) (time: 00:00s)
+048/140 ...done    (The netstat binary) (time: 00:00s)
+049/140 ...done    (Quota) (time: 00:00s)
+050/140 ...done    (The util-linux (util-linux-ng) binaries) (time: 00:00s)
+051/140 ...done    (Removed RPM packages) (time: 00:03s)
+052/140 ...done    (TaskJuggler) (time: 00:00s)
+053/140 ...done    (Replaced RPM packages) (time: 00:07s)
+054/140 ...done    (GMP library incompatibilities) (time: 00:00s)
+055/140 ...done    ("not-base" channels) (time: 00:07s)
+056/140 ...done    (Package downgrades) (time: 00:02s)
+057/140 ...done    (Custom SELinux policy) (time: 00:00s)
+058/140 ...done    (Custom SELinux configuration) (time: 00:00s)
+059/140 ...done    (Samba SELinux context check) (time: 00:00s)
+060/140 ...done    (Removing sandbox from SELinux) (time: 00:00s)
+061/140 ...done    (CUPS Browsing and BrowsePoll) (time: 00:00s)
+062/140 ...done    (CVS) (time: 00:00s)
+063/140 ...done    (FreeRADIUS) (time: 00:00s)
+064/140 ...done    (httpd) (time: 00:00s)
+065/140 ...done    (The bind-dyndb-ldap configuration file) (time: 00:00s)
+066/140 ...done    (Identity Management Server) (time: 00:00s)
+067/140 ...done    (IPA Server CA) (time: 00:00s)
+068/140 ...done    (Network Time Protocol) (time: 00:00s)
+069/140 ...done    (time-sync.target) (time: 00:00s)
+070/140 ...done    (OpenLDAP /etc/sysconfig and data compatibility) (time: 00:00s)
+071/140 ...done    (The OpenSSH sshd_config file migration) (time: 00:00s)
+072/140 ...done    (The OpenSSH sysconfig/sshd file migration) (time: 00:00s)
+073/140 ...done    (The quota_nld service) (time: 00:00s)
+074/140 ...done    (Moving the disk quota netlink message daemon into the quota-nld package) (time: 00:00s)
+075/140 ...done    (System Security Services Daemon) (time: 00:00s)
+076/140 ...done    (Tomcat configuration compatibility check) (time: 00:00s)
+077/140 ...done    (Detection of LUKS devices using Whirlpool for password hash) (time: 00:00s)
+078/140 ...done    (Detection of Direct Access Storage Device (DASD) format on s390x platform for LDL format) (time: 00:00s)
+079/140 ...done    (The clvmd and cmirrord daemon management) (time: 00:00s)
+080/140 ...done    (Logical Volume Management 2 services) (time: 00:00s)
+081/140 ...done    (Device Mapper Multipath) (time: 00:00s)
+082/140 ...done    (The scsi-target-utils packages) (time: 00:00s)
+083/140 ...done    (Backing up warnquota) (time: 00:00s)
+084/140 ...done    (The warnquota tool) (time: 00:00s)
+085/140 ...done    (Add-Ons) (time: 00:00s)
+086/140 ...done    (Unsupported architectures) (time: 00:00s)
+087/140 ...done    (Binaries to be rebuilt) (time: 00:29s)
+088/140 ...done    (Debuginfo packages) (time: 00:01s)
+089/140 ...done    (Read-only FHS directories) (time: 00:00s)
+090/140 ...done    (FHS incompatibilities) (time: 00:00s)
+091/140 ...done    (Requirements for the /usr/ directory) (time: 00:00s)
+092/140 ...done    (Cluster and High Availability) (time: 00:00s)
+093/140 ...done    (The quorum implementation) (time: 00:00s)
+094/140 ...done    (The krb5kdc configuration file) (time: 00:00s)
+095/140 ...done    (File systems, partitions, and the mounts configuration) (time: 00:00s)
+096/140 ...done    (Removable media in the /etc/fstab file) (time: 00:00s)
+097/140 ...done    (Libraries with their soname bumped) (time: 00:06s)
+098/140 ...done    (Libraries with their soname kept) (time: 00:10s)
+099/140 ...done    (Removed .so libraries) (time: 01:05s)
+100/140 ...done    (CGROUP_DAEMON in sysconfig scripts) (time: 00:00s)
+101/140 ...done    (Checking the system version and variant) (time: 00:00s)
+102/140 ...done    (AIDE) (time: 00:00s)
+103/140 ...done    (CA bundles) (time: 00:00s)
+104/140 ...done    (Red Hat Developer Toolset) (time: 00:00s)
+105/140 ...done    (Check unsafe device specifications in /etc/fstab) (time: 00:00s)
+106/140 ...done    (GRUB to GRUB 2 migration) (time: 00:00s)
+107/140 ...done    (Grubby) (time: 00:00s)
+108/140 ...done    (Obsoleting Hardware Abstraction Layer) (time: 00:01s)
+109/140 ...done    (Hyper-V) (time: 00:00s)
+110/140 ...done    (Enabled and disabled services in Red Hat Enterprise Linux 6) (time: 00:02s)
+111/140 ...done    (Ethernet interface naming) (time: 00:00s)
+112/140 ...done    (The /etc/rc.local and /etc/rc.d/rc.local files) (time: 00:00s)
+113/140 ...done    (java-1.8.0-ibm compatibility check) (time: 00:00s)
+114/140 ...done    (Java upgrade) (time: 00:00s)
+115/140 ...done    (The kernel-kdump package) (time: 00:00s)
+116/140 ...done    (The cgroups configuration compatibility) (time: 00:00s)
+117/140 ...done    (Pluggable authentication modules (PAM)) (time: 00:00s)
+118/140 ...done    (Perl modules not distributed by Red Hat) (time: 00:20s)
+119/140 ...done    (PHP modules not distributed by Red Hat) (time: 00:00s)
+120/140 ...done    (PolicyKit) (time: 00:00s)
+121/140 ...done    (Python packages) (time: 00:03s)
+122/140 ...done    (Repositories for Kickstart) (time: 00:00s)
+123/140 ...done    (System requirements) (time: 00:00s)
+124/140 ...done    (Ruby 2.0.0) (time: 00:00s)
+125/140 ...done    (Red Hat Software Collections (RHSCL)) (time: 00:00s)
+126/140 ...done    (Red Hat Subscription Manager) (time: 00:00s)
+127/140 ...done    (Red Hat Network Classic unsupported) (time: 00:00s)
+128/140 ...done    (Copying Kickstart) (time: 00:00s)
+129/140 ...done    (The 'tuned' profiles) (time: 00:00s)
+130/140 ...done    (Handle UEFI during the in-place upgrade) (time: 00:00s)
+131/140 ...done    (Yaboot) (time: 00:00s)
+132/140 ...done    (The yum configuration file) (time: 00:01s)
+133/140 ...done    (Dangerous ranges of UIDs and GIDs) (time: 00:00s)
+134/140 ...done    (Incorrect usage of reserved UIDs and GIDs) (time: 00:02s)
+135/140 ...done    (The libuser.conf file) (time: 00:00s)
+136/140 ...done    (NIS ypbind) (time: 00:00s)
+137/140 ...done    (NIS Makefile) (time: 00:00s)
+138/140 ...done    (NIS server maps) (time: 00:00s)
+139/140 ...done    (NIS server UID_MIN and GID_MIN limits) (time: 00:00s)
+140/140 ...done    (The NIS server configuration file) (time: 00:00s)
+The assessment finished (time 03:03s)
+Result table with checks and their results for 'main contents':
+-------------------------------------------------------------------------------------------------------------------
+|Bacula Backup Software                                                                        |notapplicable     |
+|MySQL data stack                                                                              |notapplicable     |
+|Changes related to moving from MySQL to MariaDB                                               |notapplicable     |
+|PostgreSQL                                                                                    |notapplicable     |
+|GNOME desktop environment                                                                     |notapplicable     |
+|KDE desktop environment                                                                       |notapplicable     |
+|Graphic drivers not supported in Red Hat Enterprise Linux 7                                   |notapplicable     |
+|Input drivers not supported in Red Hat Enterprise Linux 7                                     |notapplicable     |
+|Red Hat Directory Server                                                                      |notapplicable     |
+|Arptables                                                                                     |notapplicable     |
+|BIND9 in a chroot environment                                                                 |notapplicable     |
+|BIND9 configuration compatibility                                                             |notapplicable     |
+|Moving the 'dhcpd' and 'dhcrelay' arguments                                                   |notapplicable     |
+|Dnsmasq                                                                                       |notapplicable     |
+|Dovecot                                                                                       |notapplicable     |
+|Net-SNMP                                                                                      |notapplicable     |
+|OpenLDAP server daemon configuration                                                          |notapplicable     |
+|SMB                                                                                           |notapplicable     |
+|Sendmail                                                                                      |notapplicable     |
+|Squid                                                                                         |notapplicable     |
+|VSFTP daemon configuration                                                                    |notapplicable     |
+|Added and extended options for BIND9                                                          |notapplicable     |
+|Added options in dnsmasq                                                                      |notapplicable     |
+|Load balancer support                                                                         |notapplicable     |
+|w3m browser                                                                                   |notapplicable     |
+|The qemu-guest-agent package                                                                  |notapplicable     |
+|TaskJuggler                                                                                   |notapplicable     |
+|Custom SELinux configuration                                                                  |notapplicable     |
+|Samba SELinux context check                                                                   |notapplicable     |
+|FreeRADIUS                                                                                    |notapplicable     |
+|The bind-dyndb-ldap configuration file                                                        |notapplicable     |
+|Identity Management Server                                                                    |notapplicable     |
+|IPA Server CA                                                                                 |notapplicable     |
+|OpenLDAP /etc/sysconfig and data compatibility                                                |notapplicable     |
+|System Security Services Daemon                                                               |notapplicable     |
+|Tomcat configuration compatibility check                                                      |notapplicable     |
+|Detection of Direct Access Storage Device (DASD) format on s390x platform for LDL format      |notapplicable     |
+|The clvmd and cmirrord daemon management                                                      |notapplicable     |
+|Device Mapper Multipath                                                                       |notapplicable     |
+|The scsi-target-utils packages                                                                |notapplicable     |
+|The quorum implementation                                                                     |notapplicable     |
+|The krb5kdc configuration file                                                                |notapplicable     |
+|AIDE                                                                                          |notapplicable     |
+|java-1.8.0-ibm compatibility check                                                            |notapplicable     |
+|The kernel-kdump package                                                                      |notapplicable     |
+|PHP modules not distributed by Red Hat                                                        |notapplicable     |
+|Ruby 2.0.0                                                                                    |notapplicable     |
+|Red Hat Network Classic unsupported                                                           |notapplicable     |
+|The 'tuned' profiles                                                                          |notapplicable     |
+|Handle UEFI during the in-place upgrade                                                       |notapplicable     |
+|Yaboot                                                                                        |notapplicable     |
+|NIS ypbind                                                                                    |notapplicable     |
+|NIS Makefile                                                                                  |notapplicable     |
+|NIS server maps                                                                               |notapplicable     |
+|NIS server UID_MIN and GID_MIN limits                                                         |notapplicable     |
+|The NIS server configuration file                                                             |notapplicable     |
+|POWER6 processors                                                                             |pass              |
+|Kernel networking drivers not available in Red Hat Enterprise Linux 7                         |pass              |
+|Kernel storage drivers not available in Red Hat Enterprise Linux 7                            |pass              |
+|Reusable configuration files                                                                  |pass              |
+|Network Time Protocol                                                                         |pass              |
+|time-sync.target                                                                              |pass              |
+|The OpenSSH sshd_config file migration                                                        |pass              |
+|The quota_nld service                                                                         |pass              |
+|Moving the disk quota netlink message daemon into the quota-nld package                       |pass              |
+|Detection of LUKS devices using Whirlpool for password hash                                   |pass              |
+|Backing up warnquota                                                                          |pass              |
+|Add-Ons                                                                                       |pass              |
+|Unsupported architectures                                                                     |pass              |
+|Binaries to be rebuilt                                                                        |pass              |
+|Debuginfo packages                                                                            |pass              |
+|Read-only FHS directories                                                                     |pass              |
+|Requirements for the /usr/ directory                                                          |pass              |
+|Cluster and High Availability                                                                 |pass              |
+|CGROUP_DAEMON in sysconfig scripts                                                            |pass              |
+|Checking the system version and variant                                                       |pass              |
+|CA bundles                                                                                    |pass              |
+|Red Hat Developer Toolset                                                                     |pass              |
+|Check unsafe device specifications in /etc/fstab                                              |pass              |
+|Obsoleting Hardware Abstraction Layer                                                         |pass              |
+|Hyper-V                                                                                       |pass              |
+|The /etc/rc.local and /etc/rc.d/rc.local files                                                |pass              |
+|Pluggable authentication modules (PAM)                                                        |pass              |
+|Red Hat Software Collections (RHSCL)                                                          |pass              |
+|Red Hat Subscription Manager                                                                  |pass              |
+|Copying Kickstart                                                                             |pass              |
+|Dangerous ranges of UIDs and GIDs                                                             |pass              |
+|The libuser.conf file                                                                         |pass              |
+|NFSv2                                                                                         |informational     |
+|Postfix                                                                                       |informational     |
+|Rsyslog configuration incompatibility                                                         |informational     |
+|VCS repositories                                                                              |informational     |
+|The coreutils packages                                                                        |informational     |
+|The gawk package                                                                              |informational     |
+|Removed command line options                                                                  |informational     |
+|The netstat binary                                                                            |informational     |
+|Quota                                                                                         |informational     |
+|The util-linux (util-linux-ng) binaries                                                       |informational     |
+|GMP library incompatibilities                                                                 |informational     |
+|CVS                                                                                           |informational     |
+|httpd                                                                                         |informational     |
+|The warnquota tool                                                                            |informational     |
+|FHS incompatibilities                                                                         |informational     |
+|File systems, partitions, and the mounts configuration                                        |informational     |
+|Removable media in the /etc/fstab file                                                        |informational     |
+|Libraries with their soname kept                                                              |informational     |
+|Perl modules not distributed by Red Hat                                                       |informational     |
+|PolicyKit                                                                                     |informational     |
+|The yum configuration file                                                                    |informational     |
+|SSH configuration file and SSH keys                                                           |fixed             |
+|Replaced RPM packages                                                                         |fixed             |
+|Package downgrades                                                                            |fixed             |
+|Custom SELinux policy                                                                         |fixed             |
+|CUPS Browsing and BrowsePoll                                                                  |fixed             |
+|The OpenSSH sysconfig/sshd file migration                                                     |fixed             |
+|Logical Volume Management 2 services                                                          |fixed             |
+|Grubby                                                                                        |fixed             |
+|File lists for the manual migration                                                           |needs_inspection  |
+|Compatibility between iptables and ip6tables                                                  |needs_inspection  |
+|Moving openssh-keycat                                                                         |needs_inspection  |
+|Changed configuration files                                                                   |needs_inspection  |
+|Changes in utilities                                                                          |needs_inspection  |
+|Obsolete RPM packages                                                                         |needs_inspection  |
+|Libraries with their soname bumped                                                            |needs_inspection  |
+|Removed .so libraries                                                                         |needs_inspection  |
+|Ethernet interface naming                                                                     |needs_inspection  |
+|Python packages                                                                               |needs_inspection  |
+|Repositories for Kickstart                                                                    |needs_inspection  |
+|Incorrect usage of reserved UIDs and GIDs                                                     |needs_inspection  |
+|Configuration files to be reviewed                                                            |needs_action      |
+|MySQL configuration                                                                           |needs_action      |
+|Packages not signed by Red Hat                                                                |needs_action      |
+|Removed RPM packages                                                                          |needs_action      |
+|"not-base" channels                                                                           |needs_action      |
+|Removing sandbox from SELinux                                                                 |needs_action      |
+|GRUB to GRUB 2 migration                                                                      |needs_action      |
+|Enabled and disabled services in Red Hat Enterprise Linux 6                                   |needs_action      |
+|Java upgrade                                                                                  |needs_action      |
+|The cgroups configuration compatibility                                                       |needs_action      |
+|System requirements                                                                           |needs_action      |
+-------------------------------------------------------------------------------------------------------------------
+preupg_results-201130131840/
+preupg_results-201130131840/noauto_postupgrade.d/
+preupg_results-201130131840/noauto_postupgrade.d/install_rpmlist.sh
+preupg_results-201130131840/postmigrate.d/
+preupg_results-201130131840/kickstart/
+preupg_results-201130131840/kickstart/partitions
+preupg_results-201130131840/kickstart/NoSonameBumpLibs
+preupg_results-201130131840/kickstart/RHRHEL7rpmlist_obsoleted
+preupg_results-201130131840/kickstart/setup_passwd
+preupg_results-201130131840/kickstart/RHRHEL7rpmlist_replaced-notbase
+preupg_results-201130131840/kickstart/pvs_list
+preupg_results-201130131840/kickstart/RemovedPkg-optional
+preupg_results-201130131840/kickstart/uidgid
+preupg_results-201130131840/kickstart/nonrhpkgs
+preupg_results-201130131840/kickstart/vgs_list
+preupg_results-201130131840/kickstart/RHRHEL7rpmlist_kept
+preupg_results-201130131840/kickstart/available-repos
+preupg_results-201130131840/kickstart/untrackedsystem
+preupg_results-201130131840/kickstart/untrackedtemporary
+preupg_results-201130131840/kickstart/untrackeduser
+preupg_results-201130131840/kickstart/RemovedLibs-optional
+preupg_results-201130131840/kickstart/RHRHEL7rpmlist_replaced
+preupg_results-201130131840/kickstart/lvdisplay
+preupg_results-201130131840/kickstart/fstab
+preupg_results-201130131840/kickstart/RHRHEL7rpmlist_kept-notbase
+preupg_results-201130131840/kickstart/RemovedLibs-required
+preupg_results-201130131840/kickstart/untrackedexpected
+preupg_results-201130131840/kickstart/lsblk_list
+preupg_results-201130131840/kickstart/noverifycfg
+preupg_results-201130131840/kickstart/SonameBumpedLibs-optional
+preupg_results-201130131840/kickstart/README
+preupg_results-201130131840/kickstart/SonameBumpedLibs-required
+preupg_results-201130131840/kickstart/anaconda-ks.cfg
+preupg_results-201130131840/preupgrade-scripts/
+preupg_results-201130131840/preupgrade-scripts/fixpkgdowngrades.sh
+preupg_results-201130131840/preupgrade-scripts/release_version
+preupg_results-201130131840/preupgrade-scripts/selinux-preup-script.sh
+preupg_results-201130131840/hooks/
+preupg_results-201130131840/postupgrade.d/
+preupg_results-201130131840/postupgrade.d/httpd-data/
+preupg_results-201130131840/postupgrade.d/httpd-data/removed_modules
+preupg_results-201130131840/postupgrade.d/httpd-data/default_modules
+preupg_results-201130131840/postupgrade.d/openssh/
+preupg_results-201130131840/postupgrade.d/openssh/fix_sshkeys.sh
+preupg_results-201130131840/postupgrade.d/lvm2-services/
+preupg_results-201130131840/postupgrade.d/lvm2-services/enable_units.sh
+preupg_results-201130131840/postupgrade.d/lvm2-services/units_to_enable
+preupg_results-201130131840/postupgrade.d/reenable-iptables/
+preupg_results-201130131840/postupgrade.d/reenable-iptables/ip6tables.sh
+preupg_results-201130131840/postupgrade.d/reenable-iptables/iptables.sh
+preupg_results-201130131840/postupgrade.d/grub/
+preupg_results-201130131840/postupgrade.d/grub/splash.xpm.gz
+preupg_results-201130131840/postupgrade.d/grub/postupgrade-grub.sh
+preupg_results-201130131840/postupgrade.d/selinux/
+preupg_results-201130131840/postupgrade.d/selinux/01-selinux-autorelabel.sh
+preupg_results-201130131840/postupgrade.d/selinux/00-selinux-sandbox.sh
+preupg_results-201130131840/postupgrade.d/httpd.sh
+preupg_results-201130131840/postupgrade.d/replacedpkg/
+preupg_results-201130131840/postupgrade.d/replacedpkg/fixreplaced.sh
+preupg_results-201130131840/postupgrade.d/clean_rhel6_pkgs/
+preupg_results-201130131840/postupgrade.d/clean_rhel6_pkgs/postupgrade_cleanup.sh
+preupg_results-201130131840/postupgrade.d/clean_rhel6_pkgs/rpm_rhsigned.log
+preupg_results-201130131840/postupgrade.d/system/
+preupg_results-201130131840/postupgrade.d/system/java/
+preupg_results-201130131840/postupgrade.d/system/java/jvmdir_list
+preupg_results-201130131840/postupgrade.d/system/java/current_alternatives
+preupg_results-201130131840/postupgrade.d/system/java/java-post.sh
+preupg_results-201130131840/postupgrade.d/grubby_workaround/
+preupg_results-201130131840/postupgrade.d/grubby_workaround/postupgrade.sh
+preupg_results-201130131840/postupgrade.d/initscripts/
+preupg_results-201130131840/postupgrade.d/initscripts/disabled.log
+preupg_results-201130131840/postupgrade.d/initscripts/enabled.log
+preupg_results-201130131840/postupgrade.d/initscripts/services.py
+preupg_results-201130131840/postupgrade.d/fix_SELinuxCustomPolicy.sh
+preupg_results-201130131840/postupgrade.d/z_copy_clean_conf.sh
+preupg_results-201130131840/postupgrade.d/openssh.sh
+preupg_results-201130131840/postupgrade.d/hashed_file
+preupg_results-201130131840/postupgrade.d/cupsbrowsing/
+preupg_results-201130131840/postupgrade.d/cupsbrowsing/cups-browsed.conf
+preupg_results-201130131840/postupgrade.d/cupsbrowsing/enable-cups-browsed.sh
+preupg_results-201130131840/postupgrade.d/postupgrade_hooks.sh
+preupg_results-201130131840/postupgrade.d/pam/
+preupg_results-201130131840/postupgrade.d/pam/postupgrade-pam.sh
+preupg_results-201130131840/postupgrade.d/00_subscription-manager.sh
+preupg_results-201130131840/result.html
+preupg_results-201130131840/dirtyconf/
+preupg_results-201130131840/dirtyconf/usr/
+preupg_results-201130131840/dirtyconf/usr/lib/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/net.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/java.policy
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/nss.cfg
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/US_export_policy.jar
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/java.security
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/security/local_policy.jar
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/calendars.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/logging.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/flavormap.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/sound.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/psfontj2d.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.41.x86_64/jre/lib/content-types.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/net.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/security/
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/security/java.policy
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/security/nss.cfg
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/security/java.security
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/calendars.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/logging.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/flavormap.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/sound.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/psfontj2d.properties
+preupg_results-201130131840/dirtyconf/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/jre/lib/content-types.properties
+preupg_results-201130131840/dirtyconf/etc/
+preupg_results-201130131840/dirtyconf/etc/ntp/
+preupg_results-201130131840/dirtyconf/etc/ntp/step-tickers
+preupg_results-201130131840/dirtyconf/etc/ld.so.cache
+preupg_results-201130131840/dirtyconf/etc/ld.so.conf
+preupg_results-201130131840/dirtyconf/etc/httpd/
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/wsgi.conf
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/99-preup-httpd.conf.private
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/99-preup-httpd.conf.public
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/README
+preupg_results-201130131840/dirtyconf/etc/httpd/conf.d/welcome.conf
+preupg_results-201130131840/dirtyconf/etc/httpd/modules
+preupg_results-201130131840/dirtyconf/etc/httpd/conf/
+preupg_results-201130131840/dirtyconf/etc/httpd/conf/httpd.conf
+preupg_results-201130131840/dirtyconf/etc/httpd/conf/magic
+preupg_results-201130131840/dirtyconf/etc/httpd/logs
+preupg_results-201130131840/dirtyconf/etc/httpd/run
+preupg_results-201130131840/dirtyconf/etc/xml/
+preupg_results-201130131840/dirtyconf/etc/xml/catalog
+preupg_results-201130131840/dirtyconf/etc/gai.conf
+preupg_results-201130131840/dirtyconf/etc/adjtime
+preupg_results-201130131840/dirtyconf/etc/pam.d/
+preupg_results-201130131840/dirtyconf/etc/pam.d/password-auth
+preupg_results-201130131840/dirtyconf/etc/pam.d/system-auth
+preupg_results-201130131840/dirtyconf/etc/pam.d/smartcard-auth
+preupg_results-201130131840/dirtyconf/etc/pam.d/fingerprint-auth
+preupg_results-201130131840/dirtyconf/etc/passwd
+preupg_results-201130131840/dirtyconf/etc/fstab
+preupg_results-201130131840/dirtyconf/etc/group
+preupg_results-201130131840/dirtyconf/etc/nsswitch.conf
+preupg_results-201130131840/dirtyconf/etc/crypttab
+preupg_results-201130131840/dirtyconf/etc/sysconfig/
+preupg_results-201130131840/dirtyconf/etc/sysconfig/rhn/
+preupg_results-201130131840/dirtyconf/etc/sysconfig/rhn/up2date
+preupg_results-201130131840/dirtyconf/etc/sysconfig/prelink
+preupg_results-201130131840/dirtyconf/etc/ntp.conf
+preupg_results-201130131840/dirtyconf/etc/lvm/
+preupg_results-201130131840/dirtyconf/etc/lvm/lvm.conf
+preupg_results-201130131840/dirtyconf/etc/motd
+preupg_results-201130131840/dirtyconf/etc/insights-client/
+preupg_results-201130131840/dirtyconf/etc/insights-client/insights-client.conf
+preupg_results-201130131840/dirtyconf/etc/sgml/
+preupg_results-201130131840/dirtyconf/etc/sgml/docbook/
+preupg_results-201130131840/dirtyconf/etc/sgml/docbook/xmlcatalog
+preupg_results-201130131840/dirtyconf/etc/inittab
+preupg_results-201130131840/dirtyconf/etc/krb5.conf
+preupg_results-201130131840/dirtyconf/var/
+preupg_results-201130131840/dirtyconf/var/cache/
+preupg_results-201130131840/dirtyconf/var/cache/ldconfig/
+preupg_results-201130131840/dirtyconf/var/cache/ldconfig/aux-cache
+preupg_results-201130131840/README
+preupg_results-201130131840/cleanconf/
+preupg_results-201130131840/cleanconf/usr/
+preupg_results-201130131840/cleanconf/usr/share/
+preupg_results-201130131840/cleanconf/usr/share/info/
+preupg_results-201130131840/cleanconf/usr/share/info/dir
+preupg_results-201130131840/cleanconf/etc/
+preupg_results-201130131840/cleanconf/etc/exports
+preupg_results-201130131840/cleanconf/etc/pki/
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/key4.db
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/key3.db
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/secmod.db
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/cert9.db
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/pkcs11.txt
+preupg_results-201130131840/cleanconf/etc/pki/nssdb/cert8.db
+preupg_results-201130131840/cleanconf/etc/rpc
+preupg_results-201130131840/cleanconf/etc/prelink.conf
+preupg_results-201130131840/cleanconf/etc/selinux/
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/modules/
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/modules/active/
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/modules/active/users_extra
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/modules/active/seusers.final
+preupg_results-201130131840/cleanconf/etc/selinux/targeted/seusers
+preupg_results-201130131840/cleanconf/etc/selinux/config
+preupg_results-201130131840/cleanconf/etc/hosts
+preupg_results-201130131840/cleanconf/etc/shells
+preupg_results-201130131840/cleanconf/etc/ssh/
+preupg_results-201130131840/cleanconf/etc/ssh/sshd_config
+preupg_results-201130131840/cleanconf/etc/default/
+preupg_results-201130131840/cleanconf/etc/default/nss
+preupg_results-201130131840/cleanconf/etc/yum/
+preupg_results-201130131840/cleanconf/etc/yum/pluginconf.d/
+preupg_results-201130131840/cleanconf/etc/yum/pluginconf.d/rhnplugin.conf
+preupg_results-201130131840/cleanconf/etc/postfix/
+preupg_results-201130131840/cleanconf/etc/postfix/main.cf
+preupg_results-201130131840/cleanconf/etc/sysconfig/
+preupg_results-201130131840/cleanconf/etc/sysconfig/sshd
+preupg_results-201130131840/cleanconf/etc/cups/
+preupg_results-201130131840/cleanconf/etc/cups/lpoptions
+preupg_results-201130131840/cleanconf/etc/cups/snmp.conf
+preupg_results-201130131840/cleanconf/etc/cups/classes.conf
+preupg_results-201130131840/cleanconf/etc/cups/cups-browsed.conf
+preupg_results-201130131840/cleanconf/etc/cups/cupsd.conf
+preupg_results-201130131840/cleanconf/etc/cups/printers.conf
+preupg_results-201130131840/cleanconf/etc/cups/client.conf
+preupg_results-201130131840/cleanconf/etc/cups/subscriptions.conf
+preupg_results-201130131840/cleanconf/etc/inputrc
+preupg_results-201130131840/cleanconf/etc/yum.conf
+preupg_results-201130131840/cleanconf/var/
+preupg_results-201130131840/cleanconf/var/lib/
+preupg_results-201130131840/cleanconf/var/lib/logrotate.status
+preupg_results-201130131840/cleanconf/var/lib/prelink/
+preupg_results-201130131840/cleanconf/var/lib/prelink/force
+preupg_results-201130131840/common/
+preupg_results-201130131840/result.xml
+The tarball with results is stored in '/root/preupgrade-results/preupg_results-201130131840.tar.gz' .
+The latest assessment is stored in the '/root/preupgrade' directory.
+Summary information:
+We have found some potential risks.
+Read the full report file '/root/preupgrade/result.html' for more details.
+Please ensure you have backed up your system and/or data 
+before doing a system upgrade to prevent loss of data in 
+case the upgrade fails and full re-install of the system 
+from installation media is needed.
+Upload results to UI by the command:
+e.g. preupg -u http://example.com:8099/submit/ -r /root/preupgrade-results/preupg_results-201130131840.tar.gz .
+[root@localhost ~]# ls
+PackageKit-0.5.8-26.el6.x86_64.rpm  anaconda-ks.cfg  install.log  install.log.syslog  preupgrade  preupgrade-results
+[root@localhost ~]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /selinux
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy version:                 24
+Policy from config file:        targeted
+[root@localhost ~]# semodule -r sandbox
+[root@localhost ~]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /selinux
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy version:                 24
+Policy from config file:        targeted
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cat /etc/r
+rc                      rc4.d/                  rc.sysinit              redhat-release          rhsm/                   rsyslog.d/
+rc0.d/                  rc5.d/                  rdma/                   redhat-upgrade-tool/    rpc                     rwtab
+rc1.d/                  rc6.d/                  readahead.conf          request-key.conf        rpm/                    rwtab.d/
+rc2.d/                  rc.d/                   redhat-access-insights/ request-key.d/          rpmdevtools/            
+rc3.d/                  rc.local                redhat-lsb/             resolv.conf             rsyslog.conf            
+[root@localhost ~]# cat /etc/redhat-release 
+Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[root@localhost ~]# wget https://access.cdn.redhat.com/content/origin/files/sha256/f4/f4c6ded159284522cd85f6c4dd7a970dd6ff47d8d3680d658e9c5f38736180df/rhel-server-7.6-x86_64-boot.iso?user=8863404abdfd90d68106ddd86ad3d260&_auth_=1606726274_e55ab3276af0cce010399f1a6cd2e3d7
+[1] 4772
+[root@localhost ~]# --2020-11-30 14:11:02--  https://access.cdn.redhat.com/content/origin/files/sha256/f4/f4c6ded159284522cd85f6c4dd7a970dd6ff47d8d3680d658e9c5f38736180df/rhel-server-7.6-x86_64-boot.iso?user=8863404abdfd90d68106ddd86ad3d260
+Resolving access.cdn.redhat.com... 23.46.9.81, 23.46.9.25, 2600:1417:1e::17d3:878b, ...
+Connecting to access.cdn.redhat.com|23.46.9.81|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://access.redhat.com/downloads/content/error?code=403&uri=/content/origin/files/sha256/f4/f4c6ded159284522cd85f6c4dd7a970dd6ff47d8d3680d658e9c5f38736180df/rhel-server-7.6-x86_64-boot.iso&client=103.106.138.248&edge=23.46.9.77&timestamp=1606725664 [following]
+--2020-11-30 14:11:02--  https://access.redhat.com/downloads/content/error?code=403&uri=/content/origin/files/sha256/f4/f4c6ded159284522cd85f6c4dd7a970dd6ff47d8d3680d658e9c5f38736180df/rhel-server-7.6-x86_64-boot.iso&client=103.106.138.248&edge=23.46.9.77&timestamp=1606725664
+Resolving access.redhat.com... 23.10.36.157
+Connecting to access.redhat.com|23.10.36.157|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `rhel-server-7.6-x86_64-boot.iso?user=8863404abdfd90d68106ddd86ad3d260'
+
+    [ <=>                                                                                                          ] 104,747     --.-K/s   in 0.05s   
+
+2020-11-30 14:11:02 (2.04 MB/s) - `rhel-server-7.6-x86_64-boot.iso?user=8863404abdfd90d68106ddd86ad3d260' saved [104747]
+
+logout
+Connection to 192.168.0.103 closed.
+(base) Rachnas-MacBook-Pro:~ rdodia$ logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...110 completed.
+
+[Process completed]
+
