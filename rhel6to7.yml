@@ -10,8 +10,6 @@
   - name: Rhel version check
     debug: msg="Proceed with RHEL Upgrade validating RHEL version check"
     failed_when: ({{ ansible_distribution_version }} == 7.4 or {{ ansible_distribution_version }} == 7.5 or {{ ansible_distribution_version }} == 7.6)
- #As per SBI upgrade patching process, playbook has to be updated
- #This to be used for online migration with availability of internet/Satellite
   - name: Register to Red Hat subscription manager
     command: subscription-manager register --username rdodia --password ****
     ignore_errors: yes
@@ -20,7 +18,6 @@
   - name: Attach subscription manager to the pool ID
     command: subscription-manager attach --pool=8a85f99a6f0fa8df016f12535e7024ef
     ignore_errors: yes
-#Use existing repos/process as per SBI
   - name: Enable Repos for required RPMS needed for migration
     command: subscription-manager repos --enable rhel-6-server-extras-rpms 
   - name: Enable Repos for required RPMS needed for migration
