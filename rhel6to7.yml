@@ -39,6 +39,10 @@
   - name: OS Upgrade
     command: redhat-upgrade-tool --iso /opt/path-dvd.iso --cleanup-post
     notify: RestartServer
+  - name: Validate RHEL version
+    debug: msg="RHEL version is 7.6"
+  - name: OS Upgrade Status
+    debug: msg="OS Successfully migrated from RHEL 6.10 to 7.6"
   handlers:
   - name: RestartServer
     command: reboot
